@@ -1,0 +1,9 @@
+{
+    "CRS.AlSubFolderName": "Source",
+    "CRS.OnSaveAlFileAction": "Reorganize",
+    "CRS.FileNamePattern": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+    "CRS.FileNamePatternExtensions": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+    "CRS.FileNamePatternPageCustomizations": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
+    "CRS.ExtensionObjectNamePattern": "<BaseName>",
+    "CRS.ReorganizeByNamespace": true
+}
