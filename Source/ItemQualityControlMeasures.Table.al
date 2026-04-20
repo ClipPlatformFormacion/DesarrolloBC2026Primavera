@@ -1,6 +1,7 @@
 table 50101 "Item Quality Control Measures"
 {
     CaptionML = ENU = 'Item Quality Control Measures', ESP = 'Medidas control calidad producto';
+    DataClassification = CustomerContent;
 
     fields
     {
