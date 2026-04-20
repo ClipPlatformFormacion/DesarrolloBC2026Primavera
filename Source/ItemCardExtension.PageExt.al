@@ -38,6 +38,7 @@ pageextension 50100 "Item Card Extension" extends "Item Card"
                 RunObject = page "Item QC Measures List";
                 RunPageLink = "Item No." = field("No.");
                 ApplicationArea = All;
+                Image = Questionaire;
             }
         }
     }
