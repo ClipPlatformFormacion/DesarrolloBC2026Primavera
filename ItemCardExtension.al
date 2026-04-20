@@ -12,6 +12,19 @@ pageextension 50100 "Item Card Extension" extends "Item Card"
                     // CaptionML = ESP = 'Nuevo caption';
                     ApplicationArea = All;
                 }
+                part(QCMeasures; "Item QC Measures Factbox")
+                {
+                    ApplicationArea = All;
+                    SubPageLink = "Item No." = field("No.");
+                }
+            }
+        }
+        addbefore(ItemAttributesFactbox)
+        {
+            part(QCMeasuresFactbox; "Item QC Measures Factbox")
+            {
+                ApplicationArea = All;
+                SubPageLink = "Item No." = field("No.");
             }
         }
     }
