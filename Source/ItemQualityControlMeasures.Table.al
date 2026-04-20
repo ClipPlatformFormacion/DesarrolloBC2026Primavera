@@ -13,6 +13,7 @@ table 50101 "Item Quality Control Measures"
         {
             CaptionML = ENU = 'Measure', ESP = 'Medida';
             TableRelation = "Quality Control Measures";
+            ToolTipML = ENU = 'vsahvsahvjhasv', ESP = 'Especifica la medida que tendrá que tomar para realizar un control de calidad';
         }
         field(3; "Normal Value"; Text[50])
         {

@@ -11,6 +11,7 @@ pageextension 50100 "Item Card Extension" extends "Item Card"
                 {
                     // CaptionML = ESP = 'Nuevo caption';
                     ApplicationArea = All;
+                    ToolTipML = ENU = 'sbjhas', ESP = 'Especifica si el producto tiene que pasar por un proceso de control de calidad en la recepción de compras';
                 }
                 part(QCMeasures; "Item QC Measures Factbox")
                 {

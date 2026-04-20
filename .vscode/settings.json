@@ -8,6 +8,8 @@
     "CRS.ReorganizeByNamespace": true,
     "al.enableCodeAnalysis": true,
     "al.codeAnalyzers": [
-        "${UICop}"
-    ]
+        "${UICop}",
+        "${CodeCop}"
+    ],
+    "al.ruleSetPath": "./.vscode/misnormas.ruleset.json"
 }

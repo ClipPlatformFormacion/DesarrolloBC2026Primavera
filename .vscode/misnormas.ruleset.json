@@ -1,0 +1,13 @@
+{
+    "name": "Normas personalizadas de los analizadores",
+    "rules": [
+        {
+            "id": "AA0218",
+            "action": "Hidden"
+        },
+        {
+            "id": "AA0247",
+            "action": "None"
+        }
+    ]
+}
