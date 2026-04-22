@@ -13,6 +13,7 @@ codeunit 50100 "QC Purchase Management"
         PurchaseLine.SetRange("Document Type", PurchaseHeader."Document Type");
         PurchaseLine.SetRange("Document No.", PurchaseHeader."No.");
         PurchaseLine.SetRange(Type, Enum::"Purchase Line Type"::Item);
+        PurchaseLine.SetFilter("Qty. to Receive", '<>0');
         PurchaseLine.SetLoadFields("No.", "QC Result (Enum)", "QC Result (Option)");
         if PurchaseLine.FindSet() then  // SELECT No.,QCResult, FROM PurchaseLine
             repeat
@@ -26,4 +27,6 @@ codeunit 50100 "QC Purchase Management"
                 end;
             until PurchaseLine.Next() = 0;
     end;
+
+    // TODO: limpiar el resultado tras recepción parcial
 }
