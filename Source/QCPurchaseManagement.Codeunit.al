@@ -29,4 +29,18 @@ codeunit 50100 "QC Purchase Management"
     end;
 
     // TODO: limpiar el resultado tras recepción parcial
+
+    [EventSubscriber(ObjectType::Table, Database::"Item Journal Line", OnAfterCopyItemJnlLineFromPurchLine, '', false, false)]
+    local procedure "Item Journal Line_OnAfterCopyItemJnlLineFromPurchLine"(var ItemJnlLine: Record "Item Journal Line"; PurchLine: Record "Purchase Line")
+    begin
+        ItemJnlLine."QC Result (Option)" := PurchLine."QC Result (Option)";
+        ItemJnlLine."QC Result (Enum)" := PurchLine."QC Result (Enum)";
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Item Jnl.-Post Line", OnAfterInitItemLedgEntry, '', false, false)]
+    local procedure "Item Jnl.-Post Line_OnAfterInitItemLedgEntry"(var NewItemLedgEntry: Record "Item Ledger Entry"; var ItemJournalLine: Record "Item Journal Line"; var ItemLedgEntryNo: Integer)
+    begin
+        NewItemLedgEntry."QC Result (Option)" := ItemJournalLine."QC Result (Option)";
+        NewItemLedgEntry."QC Result (Enum)" := ItemJournalLine."QC Result (Enum)";
+    end;
 }
