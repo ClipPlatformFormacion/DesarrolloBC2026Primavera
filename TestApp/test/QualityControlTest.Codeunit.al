@@ -39,4 +39,47 @@ codeunit 50152 "Quality Control Test"
         // [Then] Se produce un error y el sistema no registra el albarán
         LibraryAssert.AreEqual(StrSubstNo(QCMandatoryResultErr, Item."No."), GetLastErrorText(), 'El mensaje de error no es el esperado');
     end;
+
+    [Test]
+    procedure QCResultIsSavedInTheReceipt()
+    var
+        Item: Record Item;
+        PurchaseHeader: Record "Purchase Header";
+        PurchaseLine: Record "Purchase Line";
+        PurchRcptLine: Record "Purch. Rcpt. Line";
+        LibraryInventory: Codeunit "Library - Inventory";
+        LibraryPurchase: Codeunit "Library - Purchase";
+        LibraryAssert: Codeunit "Library Assert";
+        DocumentNo: Code[20];
+    begin
+        // [Scenario] El resultado de control de calidad que el usuario establece en el pedido
+        // de compra, queda guardada en el correspondiente albarán tras registrar el pedido
+
+        // [Given] Un producto que requiera control de calidad
+        //         Un pedido de compra para un proveedor cualquiera
+        //         Una línea de compra para el producto (especificando resultado CC)
+        LibraryInventory.CreateItem(Item);
+        Item.Validate("Requieres Quality Control", true);
+        Item.Modify(true);
+
+        LibraryPurchase.CreatePurchaseDocumentWithItem(PurchaseHeader,
+                                                        PurchaseLine,
+                                                        "Purchase Document Type"::Order,
+                                                        '',
+                                                        Item."No.",
+                                                        1,
+                                                        '',
+                                                        Today());
+        PurchaseLine.Validate("QC Result (Option)", PurchaseLine."QC Result (Option)"::Satisfactory);
+        PurchaseLine.Validate("QC Result (Enum)", PurchaseLine."QC Result (Enum)"::Satisfactory);
+        PurchaseLine.Modify(true);
+
+        // [When] Se registra la recepción
+        DocumentNo := LibraryPurchase.PostPurchaseDocument(PurchaseHeader, true, false);
+
+        // [Then] El resultado del control de calidad ha quedado guardado en el albarán
+        PurchRcptLine.Get(DocumentNo, PurchaseLine."Line No.");
+        LibraryAssert.AreEqual(PurchaseLine."QC Result (Option)"::Satisfactory, PurchRcptLine."QC Result (Option)", 'El resultado no es correcto');
+        LibraryAssert.AreEqual(PurchaseLine."QC Result (Enum)"::Satisfactory, PurchRcptLine."QC Result (Enum)", 'El resultado no es correcto');
+    end;
 }
