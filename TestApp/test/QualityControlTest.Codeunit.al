@@ -1,6 +1,7 @@
 codeunit 50152 "Quality Control Test"
 {
     Subtype = Test;
+    TestPermissions = Disabled;
 
     [Test]
     procedure ErrorWhenPostingReceiptWithoutQCResult()
@@ -8,7 +9,7 @@ codeunit 50152 "Quality Control Test"
         Item: Record Item;
         PurchaseHeader: Record "Purchase Header";
         PurchaseLine: Record "Purchase Line";
-        LibraryInventory: Codeunit "Library - Inventory";
+        LibraryQualityControl: Codeunit "Library - Quality Control";
         LibraryPurchase: Codeunit "Library - Purchase";
         LibraryAssert: Codeunit "Library Assert";
         QCMandatoryResultErr: TextConst ENU = 'Item %1 requieres quality control', ESP = 'El producto %1 requiere control de calidad';
@@ -20,9 +21,7 @@ codeunit 50152 "Quality Control Test"
         // [Given] Un producto que requiera control de calidad
         //         Un pedido de compra para un proveedor cualquiera
         //         Una línea de compra para el producto (sin especificar resultado CC)
-        LibraryInventory.CreateItem(Item);
-        Item.Validate("Requieres Quality Control", true);
-        Item.Modify(true);
+        Item := LibraryQualityControl.CreateItemWithQC();
 
         LibraryPurchase.CreatePurchaseDocumentWithItem(PurchaseHeader,
                                                         PurchaseLine,
@@ -47,7 +46,7 @@ codeunit 50152 "Quality Control Test"
         PurchaseHeader: Record "Purchase Header";
         PurchaseLine: Record "Purchase Line";
         PurchRcptLine: Record "Purch. Rcpt. Line";
-        LibraryInventory: Codeunit "Library - Inventory";
+        LibraryQualityControl: Codeunit "Library - Quality Control";
         LibraryPurchase: Codeunit "Library - Purchase";
         LibraryAssert: Codeunit "Library Assert";
         DocumentNo: Code[20];
@@ -58,9 +57,7 @@ codeunit 50152 "Quality Control Test"
         // [Given] Un producto que requiera control de calidad
         //         Un pedido de compra para un proveedor cualquiera
         //         Una línea de compra para el producto (especificando resultado CC)
-        LibraryInventory.CreateItem(Item);
-        Item.Validate("Requieres Quality Control", true);
-        Item.Modify(true);
+        Item := LibraryQualityControl.CreateItemWithQC();
 
         LibraryPurchase.CreatePurchaseDocumentWithItem(PurchaseHeader,
                                                         PurchaseLine,
@@ -81,5 +78,43 @@ codeunit 50152 "Quality Control Test"
         PurchRcptLine.Get(DocumentNo, PurchaseLine."Line No.");
         LibraryAssert.AreEqual(PurchaseLine."QC Result (Option)"::Satisfactory, PurchRcptLine."QC Result (Option)", 'El resultado no es correcto');
         LibraryAssert.AreEqual(PurchaseLine."QC Result (Enum)"::Satisfactory, PurchRcptLine."QC Result (Enum)", 'El resultado no es correcto');
+    end;
+
+    [Test]
+    procedure SelectingItemOnAnOrderFillsQCMeasures()
+    var
+        Item: Record Item;
+        PurchaseHeader: Record "Purchase Header";
+        PurchaseLine: Record "Purchase Line";
+        ItemQCMeasures: Record "Item Quality Control Measures";
+        PurchaseQCMeasures: Record "Purch. QC Measures";
+        LibraryQualityControl: Codeunit "Library - Quality Control";
+        LibraryPurchase: Codeunit "Library - Purchase";
+        LibraryAssert: Codeunit "Library Assert";
+    begin
+        // [Scenario] Cuando un usuario selecciona un producto que 
+        // requiere control de calidad en un documento de compra
+        // el sistema le proporciona al usuario la información de las
+        // medidas que tiene que tomar
+
+        // [Given] Un producto que requiera control de calidad y tenga medidas
+        //         Un pedido de compra para un proveedor cualquiera
+        //         Una línea de compra
+        Item := LibraryQualityControl.CreateItemWithQC();
+
+        LibraryPurchase.CreatePurchHeader(PurchaseHeader, "Purchase Document Type"::Order, '');
+        LibraryPurchase.CreatePurchaseLineSimple(PurchaseLine, PurchaseHeader);
+
+        // [When] El usuario selecciona el producto en la línea
+        PurchaseLine.Validate(Type, PurchaseLine.Type::Item);
+        PurchaseLine.Validate("No.", Item."No.");
+        PurchaseLine.Modify(true);
+
+        // [Then] Existen las medidas del producto vinculadas a la línea
+        ItemQCMeasures.SetRange("Item No.", Item."No.");
+        PurchaseQCMeasures.SetRange("Document Type", PurchaseLine."Document Type");
+        PurchaseQCMeasures.SetRange("Document No.", PurchaseLine."Document No.");
+        PurchaseQCMeasures.SetRange("Line No.", PurchaseLine."Line No.");
+        LibraryAssert.AreEqual(ItemQCMeasures.Count(), PurchaseQCMeasures.Count(), 'El número es registros es incorrecto');
     end;
 }

@@ -7,5 +7,8 @@ permissionset 50100 "QC SUPER"
         table "Quality Control Measures" = X,
         page "Item QC Measures Factbox" = X,
         page "Item QC Measures List" = X,
-        page "Quality Control Measures List" = X;
+        page "Quality Control Measures List" = X,
+        tabledata "Purch. QC Measures" = RIMD,
+        table "Purch. QC Measures" = X,
+        codeunit "QC Purchase Management" = X;
 }

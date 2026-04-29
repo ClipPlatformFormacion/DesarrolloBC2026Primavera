@@ -1,5 +1,27 @@
 codeunit 50100 "QC Purchase Management"
 {
+    [EventSubscriber(ObjectType::Table, Database::"Purchase Line", OnAfterValidateEvent, "No.", false, false)]
+    local procedure OnAfterValidate_No_FillQCMeasures(var Rec: Record "Purchase Line")
+    var
+        ItemQCMeasures: Record "Item Quality Control Measures";
+        PurchaseQCMeasures: Record "Purch. QC Measures";
+    begin
+        if Rec.Type <> Rec.Type::Item then
+            exit;
+
+        ItemQCMeasures.SetRange("Item No.", Rec."No.");
+        if ItemQCMeasures.FindSet() then
+            repeat
+                PurchaseQCMeasures.Init();
+                PurchaseQCMeasures.Validate("Document Type", Rec."Document Type");
+                PurchaseQCMeasures.Validate("Document No.", Rec."Document No.");
+                PurchaseQCMeasures.Validate("Line No.", Rec."Line No.");
+                PurchaseQCMeasures.Validate(Measure, ItemQCMeasures.Measure);
+                PurchaseQCMeasures.Validate("Normal Value", ItemQCMeasures."Normal Value");
+                PurchaseQCMeasures.Insert(true);
+            until ItemQCMeasures.Next() = 0;
+    end;
+
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post", OnBeforePostPurchaseDoc, '', false, false)]
     local procedure CheckItemQualityControl(var PurchaseHeader: Record "Purchase Header")
     var
