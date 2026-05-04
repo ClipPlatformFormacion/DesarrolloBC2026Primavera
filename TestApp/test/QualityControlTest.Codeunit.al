@@ -117,4 +117,50 @@ codeunit 50152 "Quality Control Test"
         PurchaseQCMeasures.SetRange("Line No.", PurchaseLine."Line No.");
         LibraryAssert.AreEqual(ItemQCMeasures.Count(), PurchaseQCMeasures.Count(), 'El número es registros es incorrecto');
     end;
+
+    [Test]
+    procedure NothingWhenSatisfactory()
+    var
+        Item: Record Item;
+        PurchaseHeader: Record "Purchase Header";
+        PurchaseLine: Record "Purchase Line";
+        ItemLedgerEntry: Record "Item Ledger Entry";
+        LibraryQualityControl: Codeunit "Library - Quality Control";
+        LibraryPurchase: Codeunit "Library - Purchase";
+        LibraryAssert: Codeunit "Library Assert";
+        DocumentNo: Code[20];
+    begin
+        // [Scenario] Al registrar una recepción para un producto
+        //   cuya resultado del CC sea "Satisfactorio", el sistema
+        // tiene que registrar el albarán normal
+        // No genera un Ajuste Negativo posterior
+
+        // [Given] Un producto que requiera control de calidad
+        //         Un pedido de compra para un proveedor cualquiera
+        //         Una línea de compra para el producto (especificando resultado CC)
+        Item := LibraryQualityControl.CreateItemWithQC();
+
+        LibraryPurchase.CreatePurchaseDocumentWithItem(PurchaseHeader,
+                                                        PurchaseLine,
+                                                        "Purchase Document Type"::Order,
+                                                        '',
+                                                        Item."No.",
+                                                        1,
+                                                        '',
+                                                        Today());
+        PurchaseLine.Validate("QC Result (Option)", PurchaseLine."QC Result (Option)"::Satisfactory);
+        PurchaseLine.Validate("QC Result (Enum)", PurchaseLine."QC Result (Enum)"::Satisfactory);
+        PurchaseLine.Modify(true);
+
+        // [When] Se registra la recepción
+        DocumentNo := LibraryPurchase.PostPurchaseDocument(PurchaseHeader, true, false);
+
+        // [Then] Existe 1 movimiento de producto (el del albarán)
+        ItemLedgerEntry.SetRange("Document No.", DocumentNo);
+        ItemLedgerEntry.SetRange("Item No.", Item."No.");
+        LibraryAssert.AreEqual(1, ItemLedgerEntry.Count(), 'Número de registros incorrecto');
+        ItemLedgerEntry.FindFirst();
+        LibraryAssert.AreEqual(ItemLedgerEntry."Entry Type"::Purchase, ItemLedgerEntry."Entry Type", 'Dato incorrecto');
+        LibraryAssert.AreEqual(ItemLedgerEntry."Document Type"::"Purchase Receipt", ItemLedgerEntry."Document Type", 'Dato incorrecto');
+    end;
 }
