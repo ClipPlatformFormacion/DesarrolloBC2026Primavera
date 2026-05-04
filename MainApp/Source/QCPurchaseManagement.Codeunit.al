@@ -1,12 +1,26 @@
 codeunit 50100 "QC Purchase Management"
 {
+    [EventSubscriber(ObjectType::Table, Database::"Purchase Line", OnAfterInsertEvent, '', false, false)]
+    local procedure OnAfterInsert_FillQCMeasures(var Rec: Record "Purchase Line")
+    begin
+        FillQCMeasures(Rec);
+    end;
+
     [EventSubscriber(ObjectType::Table, Database::"Purchase Line", OnAfterValidateEvent, "No.", false, false)]
     local procedure OnAfterValidate_No_FillQCMeasures(var Rec: Record "Purchase Line")
+    begin
+        FillQCMeasures(Rec);
+    end;
+
+    procedure FillQCMeasures(var Rec: Record "Purchase Line")
     var
         ItemQCMeasures: Record "Item Quality Control Measures";
         PurchaseQCMeasures: Record "Purch. QC Measures";
     begin
         if Rec.Type <> Rec.Type::Item then
+            exit;
+
+        if Rec."Line No." = 0 then
             exit;
 
         ItemQCMeasures.SetRange("Item No.", Rec."No.");
