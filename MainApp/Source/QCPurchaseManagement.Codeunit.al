@@ -1,3 +1,5 @@
+// TODO: Las medidas específicas queden guardadas en el albarán
+
 codeunit 50100 "QC Purchase Management"
 {
     [EventSubscriber(ObjectType::Table, Database::"Purchase Line", OnAfterInsertEvent, '', false, false)]
@@ -65,6 +67,8 @@ codeunit 50100 "QC Purchase Management"
                         Error(QCMandatoryResultErr, PurchaseLine."No.");
                 end;
             until PurchaseLine.Next() = 0;
+
+        // TODO: Comprobar también si han establecido valor en las medidas
     end;
 
     // TODO: limpiar el resultado tras recepción parcial
