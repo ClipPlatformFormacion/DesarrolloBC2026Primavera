@@ -163,4 +163,53 @@ codeunit 50152 "Quality Control Test"
         LibraryAssert.AreEqual(ItemLedgerEntry."Entry Type"::Purchase, ItemLedgerEntry."Entry Type", 'Dato incorrecto');
         LibraryAssert.AreEqual(ItemLedgerEntry."Document Type"::"Purchase Receipt", ItemLedgerEntry."Document Type", 'Dato incorrecto');
     end;
+
+    [Test]
+    procedure NegativeAdjustmentWhenNonSatisfactory()
+    var
+        Item: Record Item;
+        PurchaseHeader: Record "Purchase Header";
+        PurchaseLine: Record "Purchase Line";
+        ItemLedgerEntry: Record "Item Ledger Entry";
+        LibraryQualityControl: Codeunit "Library - Quality Control";
+        LibraryPurchase: Codeunit "Library - Purchase";
+        LibraryAssert: Codeunit "Library Assert";
+        DocumentNo: Code[20];
+    begin
+        // [Scenario] Al registrar una recepción para un producto
+        //   cuya resultado del CC sea "No Satisfactorio", el sistema
+        // tiene que registrar el albarán normal
+        // Justo después tiene que hacer un Ajuste Negativo
+
+        // [Given] Un producto que requiera control de calidad
+        //         Un pedido de compra para un proveedor cualquiera
+        //         Una línea de compra para el producto (especificando resultado CC)
+        Item := LibraryQualityControl.CreateItemWithQC();
+
+        LibraryPurchase.CreatePurchaseDocumentWithItem(PurchaseHeader,
+                                                        PurchaseLine,
+                                                        "Purchase Document Type"::Order,
+                                                        '',
+                                                        Item."No.",
+                                                        1,
+                                                        '',
+                                                        Today());
+        PurchaseLine.Validate("QC Result (Option)", PurchaseLine."QC Result (Option)"::"Non Satisfactory");
+        PurchaseLine.Validate("QC Result (Enum)", PurchaseLine."QC Result (Enum)"::"Non Satisfactory");
+        PurchaseLine.Modify(true);
+
+        // [When] Se registra la recepción
+        DocumentNo := LibraryPurchase.PostPurchaseDocument(PurchaseHeader, true, false);
+
+        // [Then] Existe 2 movimiento de producto (el del albarán y el del ajuste negativo)
+        ItemLedgerEntry.SetRange("Document No.", DocumentNo);
+        ItemLedgerEntry.SetRange("Item No.", Item."No.");
+        LibraryAssert.AreEqual(2, ItemLedgerEntry.Count(), 'Número de registros incorrecto');
+        ItemLedgerEntry.FindSet();
+        LibraryAssert.AreEqual(ItemLedgerEntry."Entry Type"::Purchase, ItemLedgerEntry."Entry Type", 'Dato incorrecto');
+        LibraryAssert.AreEqual(ItemLedgerEntry."Document Type"::"Purchase Receipt", ItemLedgerEntry."Document Type", 'Dato incorrecto');
+        ItemLedgerEntry.Next();
+        LibraryAssert.AreEqual(ItemLedgerEntry."Entry Type"::"Negative Adjmt.", ItemLedgerEntry."Entry Type", 'Dato incorrecto');
+        // TODO Comprobar más cosas
+    end;
 }
