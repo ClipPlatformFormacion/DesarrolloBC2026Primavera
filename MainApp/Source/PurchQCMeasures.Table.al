@@ -5,7 +5,7 @@ table 50102 "Purch. QC Measures"
 
     fields
     {
-        field(10; "Document Type"; Enum "Purchase Line Type") { }
+        field(10; "Document Type"; Enum "Purchase Document Type") { }
         field(11; "Document No."; Code[20]) { }
         field(12; "Line No."; Integer) { }
         field(2; Measure; Code[20])

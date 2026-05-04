@@ -17,6 +17,9 @@ codeunit 50100 "QC Purchase Management"
         ItemQCMeasures: Record "Item Quality Control Measures";
         PurchaseQCMeasures: Record "Purch. QC Measures";
     begin
+        if Rec.IsTemporary() then
+            exit;
+
         if Rec.Type <> Rec.Type::Item then
             exit;
 

@@ -18,6 +18,8 @@ codeunit 50153 "Library - Quality Control"
     var
         QCMeasures: Record "Quality Control Measures";
     begin
+        if QCMeasures.Get(Measure) then
+            exit;
         QCMeasures.Init();
         QCMeasures.Validate(Measure, Measure);
         QCMeasures.Validate(Description, Measure);
