@@ -86,4 +86,28 @@ codeunit 50100 "QC Purchase Management"
         NewItemLedgEntry."QC Result (Option)" := ItemJournalLine."QC Result (Option)";
         NewItemLedgEntry."QC Result (Enum)" := ItemJournalLine."QC Result (Enum)";
     end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post", OnAfterPostItemJnlLine, '', false, false)]
+    local procedure "Purch.-Post_OnAfterPostItemJnlLine"(var ItemJournalLine: Record "Item Journal Line"; var PurchaseLine: Record "Purchase Line"; var PurchaseHeader: Record "Purchase Header"; var ItemJnlPostLine: Codeunit "Item Jnl.-Post Line"; var WhseJnlRegisterLine: Codeunit "Whse. Jnl.-Register Line"; var WhseReceive: Boolean; var WhseShip: Boolean; var WhseRcptHeader: Record "Warehouse Receipt Header"; var WhseShptHeader: Record "Warehouse Shipment Header")
+    var
+        NegativeAdjustmentItemJournalLine: Record "Item Journal Line";
+        UnknownQCResultErr: TextConst ENU = 'Unknown %1: %2', ESP = '%1 desconocido: %2';
+    begin
+        case PurchaseLine."QC Result (Enum)" of
+            PurchaseLine."QC Result (Enum)"::" ", PurchaseLine."QC Result (Enum)"::Satisfactory:
+                ; // No hacer nada. Registro normal
+            PurchaseLine."QC Result (Enum)"::"Non Satisfactory":
+                begin
+                    NegativeAdjustmentItemJournalLine := ItemJournalLine;
+                    NegativeAdjustmentItemJournalLine."Entry Type" := "Item Ledger Entry Type"::"Negative Adjmt.";
+                    NegativeAdjustmentItemJournalLine."Item Shpt. Entry No." := 0;
+                    NegativeAdjustmentItemJournalLine."Applies-to Entry" := ItemJournalLine."Item Shpt. Entry No.";
+                    NegativeAdjustmentItemJournalLine."Invoiced Quantity" := NegativeAdjustmentItemJournalLine.Quantity;
+                    NegativeAdjustmentItemJournalLine."Invoiced Qty. (Base)" := NegativeAdjustmentItemJournalLine."Quantity (Base)";
+                    ItemJnlPostLine.RunWithCheck(NegativeAdjustmentItemJournalLine);
+                end;
+            else
+                Error(UnknownQCResultErr, PurchaseLine.FieldCaption("QC Result (Enum)"), PurchaseLine."QC Result (Enum)");
+        end;
+    end;
 }
