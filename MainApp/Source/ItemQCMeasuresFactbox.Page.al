@@ -1,6 +1,6 @@
 page 50102 "Item QC Measures Factbox"
 {
-    CaptionML = ENU = 'Item Quality measures', ESP = 'Medidas calidad producto';
+    Caption = 'Item Quality measures', Comment = 'ESP="Medidas calidad producto"';
     PageType = ListPart;
     ApplicationArea = All;
     UsageCategory = None;

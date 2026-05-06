@@ -1,6 +1,6 @@
 table 50102 "Purch. QC Measures"
 {
-    CaptionML = ENU = 'Purchase Quality Control Measures', ESP = 'Medidas control calidad compra';
+    Caption = 'Purchase Quality Control Measures', Comment = 'ESP="Medidas control calidad compra"';
     DataClassification = CustomerContent;
 
     fields
@@ -10,17 +10,17 @@ table 50102 "Purch. QC Measures"
         field(12; "Line No."; Integer) { }
         field(2; Measure; Code[20])
         {
-            CaptionML = ENU = 'Measure', ESP = 'Medida';
+            Caption = 'Measure', Comment = 'ESP="Medida"';
             TableRelation = "Quality Control Measures";
-            ToolTipML = ENU = 'vsahvsahvjhasv', ESP = 'Especifica la medida que tendrá que tomar para realizar un control de calidad';
+            ToolTip = 'vsahvsahvjhasv', Comment = 'ESP="Especifica la medida que tendrá que tomar para realizar un control de calidad"';
         }
         field(3; "Normal Value"; Text[50])
         {
-            CaptionML = ENU = 'Normal Value', ESP = 'Valor normal';
+            Caption = 'Normal Value', Comment = 'ESP="Valor normal"';
         }
         field(4; Value; Text[50])
         {
-            CaptionML = ENU = 'Value', ESP = 'Valor';
+            Caption = 'Value', Comment = 'ESP="Valor"';
         }
     }
 

@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="Quality Control">
+    <body>
+      <group id="body">
+        <trans-unit id="Table 3383884680 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Quality Control Measures</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Medidas control calidad producto"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Item Quality Control Measures - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3383884680 - Field 568743302 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item No.</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Nº producto"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Item Quality Control Measures - Field Item No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3383884680 - Field 1810825716 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>vsahvsahvjhasv</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Especifica la medida que tendrá que tomar para realizar un control de calidad"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Item Quality Control Measures - Field Measure - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 3383884680 - Field 1810825716 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Measure</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Medida"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Item Quality Control Measures - Field Measure - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3383884680 - Field 2066807732 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Normal Value</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Valor normal"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Item Quality Control Measures - Field Normal Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3114770541 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Quality Control Measures</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Medidas control calidad compra"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Purch. QC Measures - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3114770541 - Field 486908828 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Purch. QC Measures - Field Document No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3114770541 - Field 2363328873 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Document Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Purch. QC Measures - Field Document Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3114770541 - Field 3320823955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Line No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Purch. QC Measures - Field Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3114770541 - Field 1810825716 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>vsahvsahvjhasv</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Especifica la medida que tendrá que tomar para realizar un control de calidad"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Purch. QC Measures - Field Measure - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Table 3114770541 - Field 1810825716 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Measure</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Medida"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Purch. QC Measures - Field Measure - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3114770541 - Field 2066807732 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Normal Value</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Valor normal"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Purch. QC Measures - Field Normal Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3114770541 - Field 1131619133 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Valor"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Purch. QC Measures - Field Value - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2087723315 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quality Control Measures</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Medidas control calidad"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Quality Control Measures - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2087723315 - Field 3543129988 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Blocked</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Bloqueado"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Quality Control Measures - Field Blocked - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2087723315 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Description</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Descripción"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Quality Control Measures - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2087723315 - Field 1810825716 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Measure</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Medida"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Quality Control Measures - Field Measure - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2943809854 - Method 2965680387 - NamedType 1579777531" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item %1 requieres quality control</source>
+          <note from="Developer" annotates="general" priority="2">ESP="El producto %1 requiere control de calidad"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit QC Purchase Management - Method CheckItemQualityControl - NamedType QCMandatoryResultErr</note>
+        </trans-unit>
+        <trans-unit id="Page 2080330587 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Quality measures</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Medidas calidad producto"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Item QC Measures Factbox - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1789522066 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Quality measures</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Medidas calidad producto"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Item QC Measures List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3153639527 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Quality measures</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Medidas calidad compra"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Purchase QC Measures Subpage - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1591750109 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quality Control Measures</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Medidas control calidad"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Quality Control Measures List - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 742805820 - Action 1407905489 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
+          <source>Quality Control Measures</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Medidas control calidad"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Item Card Extension - Action QCMeasuresAction - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 742805820 - Control 1483341903 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
+          <source>Quality</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Calidad",FRA="Calidad en frances"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Item Card Extension - Control Quality - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 742805820 - Control 1003069835 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
+          <source>sbjhas</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Especifica si el producto tiene que pasar por un proceso de control de calidad en la recepción de compras"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Item Card Extension - Control Requieres Quality Control - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 346005766 - Field 3382814931 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 346005766">
+          <source>QC Result (Enum)</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Resultado CC (Enum)"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Item Journal Line - Field QC Result (Enum) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 346005766 - Field 4046106435 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 346005766">
+          <source>QC Result (Option)</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Resultado CC (Option)"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Item Journal Line - Field QC Result (Option) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 346005766 - Field 4046106435 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 346005766">
+          <source> ,Satisfactory,Non Satisfactory</source>
+          <note from="Developer" annotates="general" priority="2">ESP=" ,Satisfactorio,No Satisfactorio"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Item Journal Line - Field QC Result (Option) - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4089294192 - Field 3382814931 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4089294192">
+          <source>QC Result (Enum)</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Resultado CC (Enum)"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Item Ledger Entry - Field QC Result (Enum) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4089294192 - Field 4046106435 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4089294192">
+          <source>QC Result (Option)</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Resultado CC (Option)"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Item Ledger Entry - Field QC Result (Option) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 4089294192 - Field 4046106435 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4089294192">
+          <source> ,Satisfactory,Non Satisfactory</source>
+          <note from="Developer" annotates="general" priority="2">ESP=" ,Satisfactorio,No Satisfactorio"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Item Ledger Entry - Field QC Result (Option) - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 3531986640 - Field 1003069835 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
+          <source>Requieres Quality Control</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Requiere control calidad"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension ItemExtension - Field Requieres Quality Control - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 959319265 - Field 3382814931 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 959319265">
+          <source>QC Result (Enum)</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Resultado CC (Enum)"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Purch. Rcpt. Line - Field QC Result (Enum) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 959319265 - Field 4046106435 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 959319265">
+          <source>QC Result (Option)</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Resultado CC (Option)"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Purch. Rcpt. Line - Field QC Result (Option) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 959319265 - Field 4046106435 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 959319265">
+          <source> ,Satisfactory,Non Satisfactory</source>
+          <note from="Developer" annotates="general" priority="2">ESP=" ,Satisfactorio,No Satisfactorio"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Purch. Rcpt. Line - Field QC Result (Option) - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1519909599 - Field 3382814931 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1519909599">
+          <source>QC Result (Enum)</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Resultado CC (Enum)"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Purchase Line - Field QC Result (Enum) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1519909599 - Field 4046106435 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1519909599">
+          <source>QC Result (Option)</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Resultado CC (Option)"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Purchase Line - Field QC Result (Option) - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1519909599 - Field 4046106435 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1519909599">
+          <source> ,Satisfactory,Non Satisfactory</source>
+          <note from="Developer" annotates="general" priority="2">ESP=" ,Satisfactorio,No Satisfactorio"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Purchase Line - Field QC Result (Option) - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1586726685 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2">ESP=" "</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Quality Control Result - EnumValue   - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1586726685 - EnumValue 2508983825 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Non Satisfactory</source>
+          <note from="Developer" annotates="general" priority="2">ESP="No Satisfactorio"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Quality Control Result - EnumValue Non Satisfactory - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1586726685 - EnumValue 2923686772 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Satisfactory</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Satisfactorio"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Quality Control Result - EnumValue Satisfactory - Property Caption</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
