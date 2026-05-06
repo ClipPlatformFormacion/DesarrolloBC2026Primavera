@@ -6,12 +6,13 @@ pageextension 50100 "Item Card Extension" extends "Item Card"
         {
             group(Quality)
             {
-                CaptionML = ENU = 'Quality', ESP = 'Calidad';
+                // Caption = 'Quality', Comment = 'ESP="Calidad"';
+                Caption = 'Quality', Comment = 'ESP="Calidad",FRA="Calidad en frances"';
                 field("Requieres Quality Control"; Rec."Requieres Quality Control")
                 {
                     // CaptionML = ESP = 'Nuevo caption';
                     ApplicationArea = All;
-                    ToolTipML = ENU = 'sbjhas', ESP = 'Especifica si el producto tiene que pasar por un proceso de control de calidad en la recepción de compras';
+                    ToolTip = 'sbjhas', Comment = 'ESP="Especifica si el producto tiene que pasar por un proceso de control de calidad en la recepción de compras"';
                 }
                 part(QCMeasures; "Item QC Measures Factbox")
                 {
@@ -35,7 +36,7 @@ pageextension 50100 "Item Card Extension" extends "Item Card"
         {
             action(QCMeasuresAction)
             {
-                CaptionML = ENU = 'Quality Control Measures', ESP = 'Medidas control calidad';
+                Caption = 'Quality Control Measures', Comment = 'ESP="Medidas control calidad"';
                 RunObject = page "Item QC Measures List";
                 RunPageLink = "Item No." = field("No.");
                 ApplicationArea = All;

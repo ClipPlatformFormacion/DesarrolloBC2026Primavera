@@ -1,6 +1,6 @@
 page 50103 "Purchase QC Measures Subpage"
 {
-    CaptionML = ENU = 'Purchase Quality measures', ESP = 'Medidas calidad compra';
+    Caption = 'Purchase Quality measures', Comment = 'ESP="Medidas calidad compra"';
     PageType = ListPart;
     ApplicationArea = All;
     UsageCategory = None;

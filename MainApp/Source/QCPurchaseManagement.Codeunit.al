@@ -46,7 +46,7 @@ codeunit 50100 "QC Purchase Management"
     var
         PurchaseLine: Record "Purchase Line";
         Item: Record Item;
-        QCMandatoryResultErr: TextConst ENU = 'Item %1 requieres quality control', ESP = 'El producto %1 requiere control de calidad';
+        QCMandatoryResultErr: Label 'Item %1 requieres quality control', Comment = 'ESP="El producto %1 requiere control de calidad"';
     begin
         if not PurchaseHeader.Receive then
             exit;

@@ -1,6 +1,6 @@
 page 50101 "Item QC Measures List"
 {
-    CaptionML = ENU = 'Item Quality measures', ESP = 'Medidas calidad producto';
+    Caption = 'Item Quality measures', Comment = 'ESP="Medidas calidad producto"';
     PageType = List;
     ApplicationArea = All;
     UsageCategory = None;

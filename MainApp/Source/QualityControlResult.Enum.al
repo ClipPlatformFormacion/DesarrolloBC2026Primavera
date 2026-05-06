@@ -4,14 +4,14 @@ enum 50100 "Quality Control Result"
 
     value(0; " ")
     {
-        CaptionML = ENU = ' ', ESP = ' ';
+        Caption = ' ', Comment = 'ESP=" "';
     }
     value(1; Satisfactory)
     {
-        CaptionML = ENU = 'Satisfactory', ESP = 'Satisfactorio';
+        Caption = 'Satisfactory', Comment = 'ESP="Satisfactorio"';
     }
     value(2; "Non Satisfactory")
     {
-        CaptionML = ENU = 'Non Satisfactory', ESP = 'No Satisfactorio';
+        Caption = 'Non Satisfactory', Comment = 'ESP="No Satisfactorio"';
     }
 }
