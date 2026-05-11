@@ -24,6 +24,11 @@
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Item Card Extension - Control Quality - Property Caption</note>
           <target>Calidad en frances</target>
         </trans-unit>
+        <trans-unit id="TableExtension 3531986640 - Field 4092688667 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
+          <source>Un FlowFilter</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension ItemExtension - Field Un FlowFilter - Property Caption</note>
+        </trans-unit>
       </group>
     </body>
   </file>

@@ -14,5 +14,11 @@ tableextension 50103 "Item Ledger Entry" extends "Item Ledger Entry"
             Caption = 'QC Result (Enum)', Comment = 'ESP="Resultado CC (Enum)"';
             DataClassification = CustomerContent;
         }
+        field(50103; "Source Name"; Text[100])
+        {
+            Caption = 'Source Name', comment = 'ESP="Nombre procedencia mov."';
+            FieldClass = FlowField;
+            CalcFormula = lookup(Vendor.Name where("No." = field("Source No.")));
+        }
     }
 }

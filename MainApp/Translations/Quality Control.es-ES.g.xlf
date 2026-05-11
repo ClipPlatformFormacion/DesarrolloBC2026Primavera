@@ -186,11 +186,28 @@
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Item Ledger Entry - Field QC Result (Option) - Property OptionCaption</note>
           <target> ,Satisfactorio,No Satisfactorio</target>
         </trans-unit>
+        <trans-unit id="TableExtension 4089294192 - Field 1343707150 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4089294192">
+          <source>Source Name</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Nombre procedencia mov."</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Item Ledger Entry - Field Source Name - Property Caption</note>
+          <target>Nombre procedencia mov.</target>
+        </trans-unit>
+        <trans-unit id="TableExtension 3531986640 - Field 631281581 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
+          <source>Non-satisfactory Purch. (Qty.)</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Compras No Satisfactorias (Cdad.)"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension ItemExtension - Field Non-satisfactory Purch. (Qty.) - Property Caption</note>
+          <target>Compras No Satisfactorias (Cdad.)</target>
+        </trans-unit>
         <trans-unit id="TableExtension 3531986640 - Field 1003069835 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Requieres Quality Control</source>
           <note from="Developer" annotates="general" priority="2">ESP="Requiere control calidad"</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension ItemExtension - Field Requieres Quality Control - Property Caption</note>
           <target>Requiere control calidad</target>
+        </trans-unit>
+        <trans-unit id="TableExtension 3531986640 - Field 4092688667 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
+          <source>Un FlowFilter</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension ItemExtension - Field Un FlowFilter - Property Caption</note>
         </trans-unit>
         <trans-unit id="TableExtension 959319265 - Field 3382814931 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 959319265">
           <source>QC Result (Enum)</source>

@@ -14,6 +14,10 @@ pageextension 50100 "Item Card Extension" extends "Item Card"
                     ApplicationArea = All;
                     ToolTip = 'sbjhas', Comment = 'ESP="Especifica si el producto tiene que pasar por un proceso de control de calidad en la recepción de compras"';
                 }
+                // field("Non-satisfactory Purch. (Qty.)"; Rec."Non-satisfactory Purch. (Qty.)")
+                // {
+                //     ApplicationArea = All;
+                // }
                 part(QCMeasures; "Item QC Measures Factbox")
                 {
                     ApplicationArea = All;
@@ -44,4 +48,10 @@ pageextension 50100 "Item Card Extension" extends "Item Card"
             }
         }
     }
+
+    trigger OnAfterGetRecord()
+    begin
+        Rec.CalcFields("Non-satisfactory Purch. (Qty.)");
+        Message('La cantidad comprada no satisfactoria es: %1', Rec."Non-satisfactory Purch. (Qty.)");
+    end;
 }
