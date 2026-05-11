@@ -11,6 +11,11 @@ report 50100 "Block Non Satisfactory Items"
         dataitem(Item; Item)
         {
             RequestFilterFields = "No.", Description, Inventory;
+
+            column(No; "No.") { }
+            column(Description; Description) { }
+            column(NonSatisfactoryPurchQty; "Non-satisfactory Purch. (Qty.)") { }
+
             trigger OnPreDataItem()
             begin
                 Message('OnPreDataItem %1', Counter);
