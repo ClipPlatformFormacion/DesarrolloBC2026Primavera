@@ -19,9 +19,36 @@ report 50100 "Block Non Satisfactory Items"
             column(ItemModified; Format(ItemModified)) { }
             column(ItemModifiedCaption; ItemModifiedCaption) { }
 
+            dataitem(ItemLedgerEntry; "Item Ledger Entry")
+            {
+                DataItemLinkReference = Item;
+                DataItemLink = "Item No." = field("No.");
+                DataItemTableView = where("QC Result (Enum)" = const("Non Satisfactory"));
+
+                column(Document_No_; "Document No.") { IncludeCaption = true; }
+                column(Posting_Date; "Posting Date") { IncludeCaption = true; }
+                column(Quantity; Quantity) { IncludeCaption = true; }
+                column(Source_Name; "Source Name") { IncludeCaption = true; }
+
+                // trigger OnPreDataItem()
+                // begin
+                //     Message('OnPreDataItem ItemLedgerEntry %1', Counter);
+                // end;
+
+                // trigger OnAfterGetRecord()
+                // begin
+                //     Counter += 1;
+                // end;
+
+                // trigger OnPostDataItem()
+                // begin
+                //     Message('OnPostDataItem ItemLedgerEntry %1', Counter);
+                // end;
+            }
+
             trigger OnPreDataItem()
             begin
-                Message('OnPreDataItem %1', Counter);
+                Message('OnPreDataItem Item %1', Counter);
             end;
 
             trigger OnAfterGetRecord()
@@ -43,7 +70,7 @@ report 50100 "Block Non Satisfactory Items"
 
             trigger OnPostDataItem()
             begin
-                Message('OnPostDataItem Total %1 Modificados %2', Counter, ModifiedCounter);
+                Message('OnPostDataItem Item Total %1 Modificados %2', Counter, ModifiedCounter);
             end;
         }
     }
