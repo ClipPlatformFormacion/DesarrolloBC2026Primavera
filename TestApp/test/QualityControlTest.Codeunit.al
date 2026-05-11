@@ -40,11 +40,51 @@ codeunit 50152 "Quality Control Test"
     end;
 
     [Test]
+    procedure ErrorWhenPostingReceiptWithoutQCValues()
+    var
+        Item: Record Item;
+        PurchaseHeader: Record "Purchase Header";
+        PurchaseLine: Record "Purchase Line";
+        LibraryQualityControl: Codeunit "Library - Quality Control";
+        LibraryPurchase: Codeunit "Library - Purchase";
+        LibraryAssert: Codeunit "Library Assert";
+        QCMandatoryValuesErr: Label 'Item %1 must specify Quality Control values', Comment = 'ESP="El producto %1 debe especificar los valores de control de calidad"';
+    begin
+        // [Scenario] Cuando se intenta registrar la recepción de un pedido de compra que
+        // contiene un producto que requiere control de calidad, si el usuario no establece
+        // el resultado del control de calidad, el sistema no tiene que permitir el registro
+
+        // [Given] Un producto que requiera control de calidad
+        //         Un pedido de compra para un proveedor cualquiera
+        //         Una línea de compra para el producto (sin especificar resultado CC)
+        Item := LibraryQualityControl.CreateItemWithQC();
+
+        LibraryPurchase.CreatePurchaseDocumentWithItem(PurchaseHeader,
+                                                        PurchaseLine,
+                                                        "Purchase Document Type"::Order,
+                                                        '',
+                                                        Item."No.",
+                                                        1,
+                                                        '',
+                                                        Today());
+        PurchaseLine.Validate("QC Result (Option)", PurchaseLine."QC Result (Option)"::Satisfactory);
+        PurchaseLine.Validate("QC Result (Enum)", Enum::"Quality Control Result"::Satisfactory);
+        PurchaseLine.Modify(true);
+
+        // [When] Se registra la recepción
+        asserterror LibraryPurchase.PostPurchaseDocument(PurchaseHeader, true, false);
+
+        // [Then] Se produce un error y el sistema no registra el albarán
+        LibraryAssert.AreEqual(StrSubstNo(QCMandatoryValuesErr, Item."No."), GetLastErrorText(), 'El mensaje de error no es el esperado');
+    end;
+
+    [Test]
     procedure QCResultIsSavedInTheReceipt()
     var
         Item: Record Item;
         PurchaseHeader: Record "Purchase Header";
         PurchaseLine: Record "Purchase Line";
+        PurchQCMeasures: Record "Purch. QC Measures";
         PurchRcptLine: Record "Purch. Rcpt. Line";
         LibraryQualityControl: Codeunit "Library - Quality Control";
         LibraryPurchase: Codeunit "Library - Purchase";
@@ -70,6 +110,14 @@ codeunit 50152 "Quality Control Test"
         PurchaseLine.Validate("QC Result (Option)", PurchaseLine."QC Result (Option)"::Satisfactory);
         PurchaseLine.Validate("QC Result (Enum)", PurchaseLine."QC Result (Enum)"::Satisfactory);
         PurchaseLine.Modify(true);
+        PurchQCMeasures.SetRange("Document Type", PurchaseLine."Document Type");
+        PurchQCMeasures.SetRange("Document No.", PurchaseLine."Document No.");
+        PurchQCMeasures.SetRange("Line No.", PurchaseLine."Line No.");
+        if PurchQCMeasures.FindSet() then
+            repeat
+                PurchQCMeasures.Validate(Value, 'value');
+                PurchQCMeasures.Modify(true);
+            until PurchQCMeasures.Next() = 0;
 
         // [When] Se registra la recepción
         DocumentNo := LibraryPurchase.PostPurchaseDocument(PurchaseHeader, true, false);

@@ -45,8 +45,10 @@ codeunit 50100 "QC Purchase Management"
     local procedure CheckItemQualityControl(var PurchaseHeader: Record "Purchase Header")
     var
         PurchaseLine: Record "Purchase Line";
+        PurchQCMeasures: Record "Purch. QC Measures";
         Item: Record Item;
         QCMandatoryResultErr: Label 'Item %1 requieres quality control', Comment = 'ESP="El producto %1 requiere control de calidad"';
+        QCMandatoryValuesErr: Label 'Item %1 must specify Quality Control values', Comment = 'ESP="El producto %1 debe especificar los valores de control de calidad"';
     begin
         if not PurchaseHeader.Receive then
             exit;
@@ -65,10 +67,15 @@ codeunit 50100 "QC Purchase Management"
                         Error(QCMandatoryResultErr, PurchaseLine."No.");
                     if PurchaseLine."QC Result (Option)" = PurchaseLine."QC Result (Option)"::" " then
                         Error(QCMandatoryResultErr, PurchaseLine."No.");
+
+                    PurchQCMeasures.SetRange("Document Type", PurchaseLine."Document Type");
+                    PurchQCMeasures.SetRange("Document No.", PurchaseLine."Document No.");
+                    PurchQCMeasures.SetRange("Line No.", PurchaseLine."Line No.");
+                    PurchQCMeasures.SetFilter(Value, '%1', '');
+                    if not PurchQCMeasures.IsEmpty() then
+                        Error(QCMandatoryValuesErr, PurchaseLine."No.");
                 end;
             until PurchaseLine.Next() = 0;
-
-        // TODO: Comprobar también si han establecido valor en las medidas
     end;
 
     // TODO: limpiar el resultado tras recepción parcial
