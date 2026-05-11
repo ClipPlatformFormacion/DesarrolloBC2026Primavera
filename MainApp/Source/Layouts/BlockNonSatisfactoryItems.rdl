@@ -11,7 +11,7 @@
       <am:Name>MSRB</am:Name>
       <am:Version>15.1.30001.02</am:Version>
     </am:UpdatedBy>
-    <am:LastModifiedTimestamp>2026-05-11T16:22:51.8739869Z</am:LastModifiedTimestamp>
+    <am:LastModifiedTimestamp>2026-05-11T16:53:43.6237036Z</am:LastModifiedTimestamp>
   </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
@@ -40,6 +40,9 @@
                 <TablixColumn>
                   <Width>3.4169cm</Width>
                 </TablixColumn>
+                <TablixColumn>
+                  <Width>2.5cm</Width>
+                </TablixColumn>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
@@ -55,7 +58,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Un texto fijo</Value>
+                                  <Value>=Parameters!NoCaption.Value</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -98,7 +101,7 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Description</Value>
+                                  <Value>=Parameters!DescriptionCaption.Value</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -130,7 +133,50 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Non Satisfactory Purch Qty</Value>
+                                  <Value>=Parameters!NonSatisfactoryPurchQtyCaption.Value</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox2">
+                          <rd:DefaultName>Textbox2</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!ItemModifiedCaption.Value</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
@@ -247,12 +293,43 @@
                         </Textbox>
                       </CellContents>
                     </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="ItemModified">
+                          <rd:DefaultName>ItemModified</rd:DefaultName>
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!ItemModified.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
                   </TablixCells>
                 </TablixRow>
               </TablixRows>
             </TablixBody>
             <TablixColumnHierarchy>
               <TablixMembers>
+                <TablixMember />
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
@@ -270,7 +347,7 @@
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
             <Height>1.64798cm</Height>
-            <Width>15.05857cm</Width>
+            <Width>17.55856cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -281,7 +358,7 @@
         <Height>1.64798cm</Height>
         <Style />
       </Body>
-      <Width>15.05857cm</Width>
+      <Width>17.55856cm</Width>
       <Page>
         <PageHeight>29.7cm</PageHeight>
         <PageWidth>21cm</PageWidth>
@@ -294,6 +371,58 @@
       </Page>
     </ReportSection>
   </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="NoCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>NoCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>NoCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DescriptionCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DescriptionCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DescriptionCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="NonSatisfactoryPurchQtyCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>NonSatisfactoryPurchQtyCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>NonSatisfactoryPurchQtyCaption</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>1</NumberOfColumns>
+      <NumberOfRows>3</NumberOfRows>
+      <CellDefinitions>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>NoCaption</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>1</RowIndex>
+          <ParameterName>DescriptionCaption</ParameterName>
+        </CellDefinition>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>2</RowIndex>
+          <ParameterName>NonSatisfactoryPurchQtyCaption</ParameterName>
+        </CellDefinition>
+      </CellDefinitions>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
   <Code>Public Function BlankZero(ByVal Value As Decimal)
     if Value = 0 then
         Return ""
@@ -345,6 +474,12 @@ End Function
         </Field>
         <Field Name="NonSatisfactoryPurchQtyFormat">
           <DataField>NonSatisfactoryPurchQtyFormat</DataField>
+        </Field>
+        <Field Name="ItemModified">
+          <DataField>ItemModified</DataField>
+        </Field>
+        <Field Name="ItemModifiedCaption">
+          <DataField>ItemModifiedCaption</DataField>
         </Field>
       </Fields>
       <Query>

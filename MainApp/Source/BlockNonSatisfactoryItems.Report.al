@@ -11,10 +11,13 @@ report 50100 "Block Non Satisfactory Items"
         dataitem(Item; Item)
         {
             RequestFilterFields = "No.", Description, Inventory;
+            DataItemTableView = where("Non-satisfactory Purch. (Qty.)" = filter(<> 0));
 
-            column(No; "No.") { }
-            column(Description; Description) { }
-            column(NonSatisfactoryPurchQty; "Non-satisfactory Purch. (Qty.)") { }
+            column(No; "No.") { IncludeCaption = true; }
+            column(Description; Description) { IncludeCaption = true; }
+            column(NonSatisfactoryPurchQty; "Non-satisfactory Purch. (Qty.)") { IncludeCaption = true; }
+            column(ItemModified; Format(ItemModified)) { }
+            column(ItemModifiedCaption; ItemModifiedCaption) { }
 
             trigger OnPreDataItem()
             begin
@@ -26,6 +29,7 @@ report 50100 "Block Non Satisfactory Items"
                 BlockReasonMsg: Label 'Blocked by report 50100', Comment = 'ESP="Bloqueado por report 5100"';
             begin
                 Counter := Counter + 1;
+                Clear(ItemModified);
 
                 Item.CalcFields("Non-satisfactory Purch. (Qty.)");
                 if Item."Non-satisfactory Purch. (Qty.)" > NoOfNonSatisfactoryUnits then begin
@@ -33,6 +37,7 @@ report 50100 "Block Non Satisfactory Items"
                     Item.Validate("Block Reason", BlockReasonMsg);
                     Item.Modify(true);
                     ModifiedCounter += 1;
+                    ItemModified := true;
                 end;
             end;
 
@@ -91,4 +96,6 @@ report 50100 "Block Non Satisfactory Items"
     var
         Counter, ModifiedCounter : Integer;
         NoOfNonSatisfactoryUnits: Decimal;
+        ItemModified: Boolean;
+        ItemModifiedCaption: TextConst ENU = 'Item Modified', ESP = 'Producto Modificado';
 }
