@@ -3,7 +3,8 @@ report 50100 "Block Non Satisfactory Items"
     Caption = 'Block Non Satisfactory Items', comment = 'ESP="Bloquear productos no satisfactorios"';
     UsageCategory = ReportsAndAnalysis;
     ApplicationArea = All;
-    ProcessingOnly = true;
+    // ProcessingOnly = true;
+    DefaultRenderingLayout = RDLCLayout;
 
     dataset
     {
@@ -62,6 +63,15 @@ report 50100 "Block Non Satisfactory Items"
         begin
             NoOfNonSatisfactoryUnits := 1;
         end;
+    }
+
+    rendering
+    {
+        layout(RDLCLayout)
+        {
+            Type = RDLC;
+            LayoutFile = './Source/Layouts/BlockNonSatisfactoryItems.rdl';
+        }
     }
 
     trigger OnPreReport()
