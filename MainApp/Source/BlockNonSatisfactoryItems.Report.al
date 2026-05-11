@@ -9,6 +9,7 @@ report 50100 "Block Non Satisfactory Items"
     {
         dataitem(Item; Item)
         {
+            RequestFilterFields = "No.", Description, Inventory;
             trigger OnPreDataItem()
             begin
                 Message('OnPreDataItem %1', Counter);
@@ -56,7 +57,21 @@ report 50100 "Block Non Satisfactory Items"
                 }
             }
         }
+
+        trigger OnOpenPage()
+        begin
+            NoOfNonSatisfactoryUnits := 1;
+        end;
     }
+
+    trigger OnPreReport()
+    begin
+        if NoOfNonSatisfactoryUnits = 0 then
+            Error('Tienes que especificar un número mínimo');
+
+        if not Confirm('¿Estás seguro que quieres bloquear los productos con más de %1 unidades no satisfactorias?', false, NoOfNonSatisfactoryUnits) then
+            Error('Proceso detenido a petición del usuario');
+    end;
 
     var
         Counter, ModifiedCounter : Integer;
