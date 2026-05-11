@@ -18,6 +18,16 @@
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table Purch. QC Measures - Field Line No. - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Report 2475580156 - RequestPage 2516438534 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Teaching tip title</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Block Non Satisfactory Items - RequestPage RequestOptionsPage - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Report 2475580156 - RequestPage 2516438534 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Teaching tip content</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Block Non Satisfactory Items - RequestPage RequestOptionsPage - Property AboutText</note>
+        </trans-unit>
         <trans-unit id="PageExtension 742805820 - Control 1483341903 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
           <source>Quality</source>
           <note from="Developer" annotates="general" priority="2">ESP="Calidad",FRA="Calidad en frances"</note>

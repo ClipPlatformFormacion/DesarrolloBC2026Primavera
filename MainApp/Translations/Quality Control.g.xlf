@@ -113,6 +113,41 @@
           <note from="Developer" annotates="general" priority="2">ESP="Medidas control calidad"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Quality Control Measures List - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Report 2475580156 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Block Non Satisfactory Items</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Bloquear productos no satisfactorios"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Block Non Satisfactory Items - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2475580156 - ReportDataItem 3276313895 - Method 3245603402 - NamedType 2609102328" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Blocked by report 50100</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Bloqueado por report 5100"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Block Non Satisfactory Items - ReportDataItem Item - Method OnAfterGetRecord - NamedType BlockReasonMsg</note>
+        </trans-unit>
+        <trans-unit id="Report 2475580156 - RequestPage 2516438534 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Teaching tip title</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Block Non Satisfactory Items - RequestPage RequestOptionsPage - Property AboutTitle</note>
+        </trans-unit>
+        <trans-unit id="Report 2475580156 - RequestPage 2516438534 - Property 247559172" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Teaching tip content</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Block Non Satisfactory Items - RequestPage RequestOptionsPage - Property AboutText</note>
+        </trans-unit>
+        <trans-unit id="Report 2475580156 - Control 2346885236 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Options</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Opciones"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Block Non Satisfactory Items - Control Options - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2475580156 - Control 996655856 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>EnglishText</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Se van a bloquear los productos que tengan almenos el número de unidades no satisfactorias especificadas en este campo"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Block Non Satisfactory Items - Control NoOfNonSatisfactoryUnitsLabel - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Report 2475580156 - Control 996655856 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No. of Non-Satisfactory Units</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Nº de Unidades No Satisfactorias"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Block Non Satisfactory Items - Control NoOfNonSatisfactoryUnitsLabel - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 742805820 - Action 1407905489 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
           <source>Quality Control Measures</source>
           <note from="Developer" annotates="general" priority="2">ESP="Medidas control calidad"</note>
