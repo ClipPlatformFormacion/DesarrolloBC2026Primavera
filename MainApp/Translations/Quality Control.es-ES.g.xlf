@@ -108,6 +108,12 @@
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit QC Purchase Management - Method CheckItemQualityControl - NamedType QCMandatoryResultErr</note>
           <target>El producto %1 requiere control de calidad</target>
         </trans-unit>
+        <trans-unit id="Codeunit 2943809854 - Method 2965680387 - NamedType 273050172" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item %1 must specify Quality Control values</source>
+          <note from="Developer" annotates="general" priority="2">ESP="El producto %1 debe especificar los valores de control de calidad"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit QC Purchase Management - Method CheckItemQualityControl - NamedType QCMandatoryValuesErr</note>
+          <target>El producto %1 debe especificar los valores de control de calidad</target>
+        </trans-unit>
         <trans-unit id="Page 2080330587 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Quality measures</source>
           <note from="Developer" annotates="general" priority="2">ESP="Medidas calidad producto"</note>
