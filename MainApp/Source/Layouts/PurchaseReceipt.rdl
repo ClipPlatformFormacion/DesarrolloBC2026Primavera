@@ -1,13 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:am="http://schemas.microsoft.com/sqlserver/reporting/authoringmetadata">
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>d241ffee-7df1-4c9e-bac1-892b9e90e073</rd:ReportID>
+  <am:AuthoringMetadata>
+    <am:CreatedBy>
+      <am:Name>MSRB</am:Name>
+      <am:Version>15.1.30001.02</am:Version>
+    </am:CreatedBy>
+    <am:UpdatedBy>
+      <am:Name>MSRB</am:Name>
+      <am:Version>15.1.30001.02</am:Version>
+    </am:UpdatedBy>
+    <am:LastModifiedTimestamp>2026-05-13T15:08:04.8057257Z</am:LastModifiedTimestamp>
+  </am:AuthoringMetadata>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="DataSource">
+      <rd:SecurityType>None</rd:SecurityType>
       <ConnectionProperties>
         <DataProvider>SQL</DataProvider>
         <ConnectString />
       </ConnectionProperties>
-      <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>7f8a9ad9-df2a-441b-beaa-25367f5fea6b</rd:DataSourceID>
     </DataSource>
   </DataSources>
@@ -19,12 +32,12 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>7.09913in</Width>
+                  <Width>18.0318cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>3.05417in</Height>
+                  <Height>7.75759cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -34,21 +47,24 @@
                               <TablixBody>
                                 <TablixColumns>
                                   <TablixColumn>
-                                    <Width>1.39982in</Width>
+                                    <Width>3.55554cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>2.64967in</Width>
+                                    <Width>6.73016cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>1.52481in</Width>
+                                    <Width>2.5cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>1.52481in</Width>
+                                    <Width>2.56273cm</Width>
+                                  </TablixColumn>
+                                  <TablixColumn>
+                                    <Width>2.68334cm</Width>
                                   </TablixColumn>
                                 </TablixColumns>
                                 <TablixRows>
                                   <TablixRow>
-                                    <Height>0.15998in</Height>
+                                    <Height>0.40635cm</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
@@ -108,6 +124,41 @@
                                               <Border>
                                                 <Style>None</Style>
                                               </Border>
+                                              <VerticalAlign>Bottom</VerticalAlign>
+                                              <PaddingLeft>5pt</PaddingLeft>
+                                              <PaddingRight>5pt</PaddingRight>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Textbox3">
+                                            <rd:DefaultName>Textbox3</rd:DefaultName>
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>=Parameters!QC_Result__Enum_Caption.Value</Value>
+                                                    <Style>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
+                                                      <FontWeight>Bold</FontWeight>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style>
+                                                  <TextAlign>Right</TextAlign>
+                                                </Style>
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <Style>
+                                              <Border>
+                                                <Style>None</Style>
+                                              </Border>
+                                              <BackgroundColor>Lime</BackgroundColor>
                                               <VerticalAlign>Bottom</VerticalAlign>
                                               <PaddingLeft>5pt</PaddingLeft>
                                               <PaddingRight>5pt</PaddingRight>
@@ -183,11 +234,12 @@
                                     </TablixCells>
                                   </TablixRow>
                                   <TablixRow>
-                                    <Height>0.06249in</Height>
+                                    <Height>0.15872cm</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="textbox10">
+                                            <rd:DefaultName>textbox10</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
@@ -205,7 +257,6 @@
                                                 <Style />
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>textbox10</rd:DefaultName>
                                             <Style>
                                               <BottomBorder>
                                                 <Style>Solid</Style>
@@ -219,6 +270,7 @@
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="textbox17">
+                                            <rd:DefaultName>textbox17</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
@@ -236,7 +288,40 @@
                                                 <Style />
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>textbox17</rd:DefaultName>
+                                            <Style>
+                                              <BottomBorder>
+                                                <Style>Solid</Style>
+                                              </BottomBorder>
+                                              <VerticalAlign>Top</VerticalAlign>
+                                              <PaddingLeft>5pt</PaddingLeft>
+                                              <PaddingRight>5pt</PaddingRight>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Textbox5">
+                                            <rd:DefaultName>Textbox5</rd:DefaultName>
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value />
+                                                    <Style>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
+                                                      <FontWeight>Bold</FontWeight>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style>
+                                                  <TextAlign>Right</TextAlign>
+                                                </Style>
+                                              </Paragraph>
+                                            </Paragraphs>
                                             <Style>
                                               <BottomBorder>
                                                 <Style>Solid</Style>
@@ -251,6 +336,7 @@
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="textbox26">
+                                            <rd:DefaultName>textbox26</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
@@ -270,7 +356,6 @@
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>textbox26</rd:DefaultName>
                                             <Style>
                                               <BottomBorder>
                                                 <Style>Solid</Style>
@@ -285,6 +370,7 @@
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="textbox27">
+                                            <rd:DefaultName>textbox27</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
@@ -302,7 +388,6 @@
                                                 <Style />
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>textbox27</rd:DefaultName>
                                             <Style>
                                               <BottomBorder>
                                                 <Style>Solid</Style>
@@ -316,11 +401,12 @@
                                     </TablixCells>
                                   </TablixRow>
                                   <TablixRow>
-                                    <Height>0.06249in</Height>
+                                    <Height>0.15872cm</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="textbox29">
+                                            <rd:DefaultName>textbox29</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
@@ -338,7 +424,6 @@
                                                 <Style />
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>textbox29</rd:DefaultName>
                                             <Style>
                                               <BottomBorder>
                                                 <Style>None</Style>
@@ -352,6 +437,7 @@
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="textbox30">
+                                            <rd:DefaultName>textbox30</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
@@ -369,7 +455,6 @@
                                                 <Style />
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>textbox30</rd:DefaultName>
                                             <Style>
                                               <BottomBorder>
                                                 <Style>None</Style>
@@ -383,7 +468,8 @@
                                       </TablixCell>
                                       <TablixCell>
                                         <CellContents>
-                                          <Textbox Name="textbox31">
+                                          <Textbox Name="Textbox6">
+                                            <rd:DefaultName>Textbox6</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
@@ -403,7 +489,40 @@
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
+                                            <Style>
+                                              <BottomBorder>
+                                                <Style>None</Style>
+                                              </BottomBorder>
+                                              <VerticalAlign>Top</VerticalAlign>
+                                              <PaddingLeft>5pt</PaddingLeft>
+                                              <PaddingRight>5pt</PaddingRight>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="textbox31">
                                             <rd:DefaultName>textbox31</rd:DefaultName>
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value />
+                                                    <Style>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
+                                                      <FontWeight>Bold</FontWeight>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style>
+                                                  <TextAlign>Right</TextAlign>
+                                                </Style>
+                                              </Paragraph>
+                                            </Paragraphs>
                                             <Style>
                                               <BottomBorder>
                                                 <Style>None</Style>
@@ -418,6 +537,7 @@
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="textbox33">
+                                            <rd:DefaultName>textbox33</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
@@ -435,7 +555,6 @@
                                                 <Style />
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>textbox33</rd:DefaultName>
                                             <Style>
                                               <BottomBorder>
                                                 <Style>None</Style>
@@ -449,7 +568,7 @@
                                     </TablixCells>
                                   </TablixRow>
                                   <TablixRow>
-                                    <Height>0.15998in</Height>
+                                    <Height>0.40635cm</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
@@ -508,6 +627,65 @@
                                             </Visibility>
                                             <DataElementOutput>NoOutput</DataElementOutput>
                                             <Style>
+                                              <VerticalAlign>Top</VerticalAlign>
+                                              <PaddingLeft>5pt</PaddingLeft>
+                                              <PaddingRight>5pt</PaddingRight>
+                                            </Style>
+                                          </Textbox>
+                                        </CellContents>
+                                      </TablixCell>
+                                      <TablixCell>
+                                        <CellContents>
+                                          <Textbox Name="Textbox7">
+                                            <rd:DefaultName>Textbox7</rd:DefaultName>
+                                            <CanGrow>true</CanGrow>
+                                            <KeepTogether>true</KeepTogether>
+                                            <Paragraphs>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value>=Fields!QC_Result__Enum_.Value</Value>
+                                                    <Style>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style>
+                                                  <TextAlign>Right</TextAlign>
+                                                </Style>
+                                              </Paragraph>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value />
+                                                    <Style>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style>
+                                                  <TextAlign>Right</TextAlign>
+                                                </Style>
+                                              </Paragraph>
+                                              <Paragraph>
+                                                <TextRuns>
+                                                  <TextRun>
+                                                    <Value />
+                                                    <Style>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
+                                                  </TextRun>
+                                                </TextRuns>
+                                                <Style>
+                                                  <TextAlign>Right</TextAlign>
+                                                </Style>
+                                              </Paragraph>
+                                            </Paragraphs>
+                                            <Style>
+                                              <BackgroundColor>Lime</BackgroundColor>
                                               <VerticalAlign>Top</VerticalAlign>
                                               <PaddingLeft>5pt</PaddingLeft>
                                               <PaddingRight>5pt</PaddingRight>
@@ -583,7 +761,7 @@
                                     </TablixCells>
                                   </TablixRow>
                                   <TablixRow>
-                                    <Height>0.13889in</Height>
+                                    <Height>0.35278cm</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
@@ -640,9 +818,10 @@
                                               <PaddingRight>5pt</PaddingRight>
                                             </Style>
                                           </Textbox>
-                                          <ColSpan>3</ColSpan>
+                                          <ColSpan>4</ColSpan>
                                         </CellContents>
                                       </TablixCell>
+                                      <TablixCell />
                                       <TablixCell />
                                       <TablixCell />
                                     </TablixCells>
@@ -651,6 +830,7 @@
                               </TablixBody>
                               <TablixColumnHierarchy>
                                 <TablixMembers>
+                                  <TablixMember />
                                   <TablixMember />
                                   <TablixMember />
                                   <TablixMember />
@@ -718,15 +898,15 @@
                               <TablixBody>
                                 <TablixColumns>
                                   <TablixColumn>
-                                    <Width>1.37483in</Width>
+                                    <Width>3.49207cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>2.36457in</Width>
+                                    <Width>6.00601cm</Width>
                                   </TablixColumn>
                                 </TablixColumns>
                                 <TablixRows>
                                   <TablixRow>
-                                    <Height>0.13889in</Height>
+                                    <Height>0.35278cm</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
@@ -835,12 +1015,12 @@
                               <TablixBody>
                                 <TablixColumns>
                                   <TablixColumn>
-                                    <Width>3.24959in</Width>
+                                    <Width>8.25396cm</Width>
                                   </TablixColumn>
                                 </TablixColumns>
                                 <TablixRows>
                                   <TablixRow>
-                                    <Height>1.28192in</Height>
+                                    <Height>3.25608cm</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
@@ -850,12 +1030,12 @@
                                                 <TablixBody>
                                                   <TablixColumns>
                                                     <TablixColumn>
-                                                      <Width>3.24959in</Width>
+                                                      <Width>8.25396cm</Width>
                                                     </TablixColumn>
                                                   </TablixColumns>
                                                   <TablixRows>
                                                     <TablixRow>
-                                                      <Height>0.13889in</Height>
+                                                      <Height>0.35278cm</Height>
                                                       <TablixCells>
                                                         <TablixCell>
                                                           <CellContents>
@@ -888,7 +1068,7 @@
                                                       </TablixCells>
                                                     </TablixRow>
                                                     <TablixRow>
-                                                      <Height>0.13889in</Height>
+                                                      <Height>0.35278cm</Height>
                                                       <TablixCells>
                                                         <TablixCell>
                                                           <CellContents>
@@ -921,7 +1101,7 @@
                                                       </TablixCells>
                                                     </TablixRow>
                                                     <TablixRow>
-                                                      <Height>0.13889in</Height>
+                                                      <Height>0.35278cm</Height>
                                                       <TablixCells>
                                                         <TablixCell>
                                                           <CellContents>
@@ -953,7 +1133,7 @@
                                                       </TablixCells>
                                                     </TablixRow>
                                                     <TablixRow>
-                                                      <Height>0.13889in</Height>
+                                                      <Height>0.35278cm</Height>
                                                       <TablixCells>
                                                         <TablixCell>
                                                           <CellContents>
@@ -985,7 +1165,7 @@
                                                       </TablixCells>
                                                     </TablixRow>
                                                     <TablixRow>
-                                                      <Height>0.13889in</Height>
+                                                      <Height>0.35278cm</Height>
                                                       <TablixCells>
                                                         <TablixCell>
                                                           <CellContents>
@@ -1017,7 +1197,7 @@
                                                       </TablixCells>
                                                     </TablixRow>
                                                     <TablixRow>
-                                                      <Height>0.13889in</Height>
+                                                      <Height>0.35278cm</Height>
                                                       <TablixCells>
                                                         <TablixCell>
                                                           <CellContents>
@@ -1049,7 +1229,7 @@
                                                       </TablixCells>
                                                     </TablixRow>
                                                     <TablixRow>
-                                                      <Height>0.13889in</Height>
+                                                      <Height>0.35278cm</Height>
                                                       <TablixCells>
                                                         <TablixCell>
                                                           <CellContents>
@@ -1081,7 +1261,7 @@
                                                       </TablixCells>
                                                     </TablixRow>
                                                     <TablixRow>
-                                                      <Height>0.13889in</Height>
+                                                      <Height>0.35278cm</Height>
                                                       <TablixCells>
                                                         <TablixCell>
                                                           <CellContents>
@@ -1181,15 +1361,15 @@
                                                 <TablixBody>
                                                   <TablixColumns>
                                                     <TablixColumn>
-                                                      <Width>1.12486in</Width>
+                                                      <Width>2.85714cm</Width>
                                                     </TablixColumn>
                                                     <TablixColumn>
-                                                      <Width>2.12474in</Width>
+                                                      <Width>5.39684cm</Width>
                                                     </TablixColumn>
                                                   </TablixColumns>
                                                   <TablixRows>
                                                     <TablixRow>
-                                                      <Height>0.13889in</Height>
+                                                      <Height>0.35278cm</Height>
                                                       <TablixCells>
                                                         <TablixCell>
                                                           <CellContents>
@@ -1310,22 +1490,23 @@
                               <TablixBody>
                                 <TablixColumns>
                                   <TablixColumn>
-                                    <Width>1.87681in</Width>
+                                    <Width>4.7671cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>3.50161in</Width>
+                                    <Width>8.89409cm</Width>
                                   </TablixColumn>
                                   <TablixColumn>
-                                    <Width>1.72057in</Width>
+                                    <Width>4.37025cm</Width>
                                   </TablixColumn>
                                 </TablixColumns>
                                 <TablixRows>
                                   <TablixRow>
-                                    <Height>0.27778in</Height>
+                                    <Height>0.70556cm</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="Textbox1">
+                                            <rd:DefaultName>Textbox1</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
@@ -1344,7 +1525,6 @@
                                                 </Style>
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>Textbox1</rd:DefaultName>
                                             <Style>
                                               <Border />
                                               <VerticalAlign>Top</VerticalAlign>
@@ -1356,6 +1536,7 @@
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="Textbox2">
+                                            <rd:DefaultName>Textbox2</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
@@ -1372,7 +1553,6 @@
                                                 <Style />
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>Textbox2</rd:DefaultName>
                                             <Style>
                                               <Border />
                                               <VerticalAlign>Top</VerticalAlign>
@@ -1385,6 +1565,7 @@
                                       <TablixCell>
                                         <CellContents>
                                           <Textbox Name="Textbox4">
+                                            <rd:DefaultName>Textbox4</rd:DefaultName>
                                             <CanGrow>true</CanGrow>
                                             <KeepTogether>true</KeepTogether>
                                             <Paragraphs>
@@ -1401,7 +1582,6 @@
                                                 <Style />
                                               </Paragraph>
                                             </Paragraphs>
-                                            <rd:DefaultName>Textbox4</rd:DefaultName>
                                             <Style>
                                               <Border />
                                               <VerticalAlign>Top</VerticalAlign>
@@ -1414,7 +1594,7 @@
                                     </TablixCells>
                                   </TablixRow>
                                   <TablixRow>
-                                    <Height>0.13889in</Height>
+                                    <Height>0.35278cm</Height>
                                     <TablixCells>
                                       <TablixCell>
                                         <CellContents>
@@ -1500,7 +1680,7 @@
                               <Top>2.6375in</Top>
                               <Left>0.00035cm</Left>
                               <Height>1.05834cm</Height>
-                              <Width>18.03144cm</Width>
+                              <Width>18.03143cm</Width>
                               <ZIndex>3</ZIndex>
                               <Visibility>
                                 <Hidden>=IIF(Fields!DimText.Value="",TRUE,FALSE)</Hidden>
@@ -1772,7 +1952,7 @@ Fields!PaytoVenNo_PurchRcptHeader.Value, 3)</Hidden>
             </PageBreak>
             <Left>0.01028in</Left>
             <Height>7.75759cm</Height>
-            <Width>18.03179cm</Width>
+            <Width>18.0318cm</Width>
             <Style>
               <Border>
                 <Width>0.25pt</Width>
@@ -2573,6 +2753,7 @@ Fields!PaytoVenNo_PurchRcptHeader.Value, 3)</Hidden>
               <Width>360pt</Width>
               <ZIndex>29</ZIndex>
               <Style>
+                <BackgroundColor>Orange</BackgroundColor>
                 <VerticalAlign>Middle</VerticalAlign>
               </Style>
             </Textbox>
@@ -2613,6 +2794,7 @@ Fields!PaytoVenNo_PurchRcptHeader.Value, 3)</Hidden>
                       <Style>
                         <FontFamily>Segoe UI</FontFamily>
                         <FontSize>8pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
                       </Style>
                     </TextRun>
                   </TextRuns>
@@ -2626,6 +2808,7 @@ Fields!PaytoVenNo_PurchRcptHeader.Value, 3)</Hidden>
               <Width>360pt</Width>
               <ZIndex>31</ZIndex>
               <Style>
+                <BackgroundColor>Yellow</BackgroundColor>
                 <VerticalAlign>Middle</VerticalAlign>
               </Style>
             </Textbox>
@@ -2759,7 +2942,7 @@ Fields!PaytoVenNo_PurchRcptHeader.Value, 3)</Hidden>
               <Left>5.01389in</Left>
               <Height>11pt</Height>
               <Width>2.63929cm</Width>
-              <ZIndex>39</ZIndex>
+              <ZIndex>36</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -2789,7 +2972,7 @@ Fields!PaytoVenNo_PurchRcptHeader.Value, 3)</Hidden>
               <Left>15.41515cm</Left>
               <Height>11pt</Height>
               <Width>2.64276cm</Width>
-              <ZIndex>40</ZIndex>
+              <ZIndex>37</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -2819,7 +3002,7 @@ Fields!PaytoVenNo_PurchRcptHeader.Value, 3)</Hidden>
               <Left>0.0204cm</Left>
               <Height>11pt</Height>
               <Width>3.23378cm</Width>
-              <ZIndex>41</ZIndex>
+              <ZIndex>38</ZIndex>
               <Style>
                 <Border />
               </Style>
@@ -2844,7 +3027,7 @@ Fields!PaytoVenNo_PurchRcptHeader.Value, 3)</Hidden>
               <Left>3.36001cm</Left>
               <Height>11pt</Height>
               <Width>9.33999cm</Width>
-              <ZIndex>42</ZIndex>
+              <ZIndex>39</ZIndex>
               <Style>
                 <Border />
               </Style>
@@ -2863,6 +3046,30 @@ Fields!PaytoVenNo_PurchRcptHeader.Value, 3)</Hidden>
       </Page>
     </ReportSection>
   </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="QC_Result__Enum_Caption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>QC_Result__Enum_Caption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>QC_Result__Enum_Caption</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>1</NumberOfColumns>
+      <NumberOfRows>1</NumberOfRows>
+      <CellDefinitions>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>QC_Result__Enum_Caption</ParameterName>
+        </CellDefinition>
+      </CellDefinitions>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
   <Code>Public Function BlankZero(ByVal Value As Decimal)
     if Value = 0 then
         Return ""
@@ -2968,8 +3175,6 @@ End Function
 </Code>
   <Language>=User!Language</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
-  <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>d241ffee-7df1-4c9e-bac1-892b9e90e073</rd:ReportID>
   <DataSets>
     <DataSet Name="DataSet_Result">
       <Fields>
@@ -3230,6 +3435,9 @@ End Function
         </Field>
         <Field Name="PaytoVenNo_PurchRcptHeaderCaption">
           <DataField>PaytoVenNo_PurchRcptHeaderCaption</DataField>
+        </Field>
+        <Field Name="QC_Result__Enum_">
+          <DataField>QC_Result__Enum_</DataField>
         </Field>
       </Fields>
       <Query>
