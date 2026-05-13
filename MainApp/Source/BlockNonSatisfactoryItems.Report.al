@@ -114,8 +114,13 @@ report 50100 "Block Non Satisfactory Items"
         layout(ExcelLayout)
         {
             Type = Excel;
-            ExcelLayoutMultipleDataSheets = true;
+            // ExcelLayoutMultipleDataSheets = true;
             LayoutFile = './Source/Layouts/BlockNonSatisfactoryItems.xlsx';
+        }
+        layout(WordLayout)
+        {
+            Type = Word;
+            LayoutFile = './Source/Layouts/BlockNonSatisfactoryItems.docx';
         }
     }
 
