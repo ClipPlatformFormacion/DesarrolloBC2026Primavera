@@ -4,7 +4,7 @@ report 50100 "Block Non Satisfactory Items"
     UsageCategory = ReportsAndAnalysis;
     ApplicationArea = All;
     // ProcessingOnly = true;
-    DefaultRenderingLayout = RDLCLayout;
+    DefaultRenderingLayout = ExcelLayout;
 
     dataset
     {
@@ -110,6 +110,11 @@ report 50100 "Block Non Satisfactory Items"
         {
             Type = RDLC;
             LayoutFile = './Source/Layouts/BlockNonSatisfactoryItems.rdl';
+        }
+        layout(ExcelLayout)
+        {
+            Type = Excel;
+            LayoutFile = './Source/Layouts/BlockNonSatisfactoryItems.xlsx';
         }
     }
 
