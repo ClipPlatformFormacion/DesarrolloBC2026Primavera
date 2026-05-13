@@ -22,8 +22,10 @@ report 50100 "Block Non Satisfactory Items"
             dataitem(ItemLedgerEntry; "Item Ledger Entry")
             {
                 DataItemLinkReference = Item;
-                DataItemLink = "Item No." = field("No.");
-                DataItemTableView = where("QC Result (Enum)" = const("Non Satisfactory"));
+                DataItemLink = "Item No." = field("No."), "Location Code" = field("Un FlowFilter");
+                DataItemTableView = sorting("Entry No.") where("QC Result (Enum)" = const("Non Satisfactory"),
+                                            "Entry Type" = const(Purchase),
+                                            "Document Type" = const("Purchase Receipt"));
 
                 column(Document_No_; "Document No.") { IncludeCaption = true; }
                 column(Posting_Date; "Posting Date") { IncludeCaption = true; }
