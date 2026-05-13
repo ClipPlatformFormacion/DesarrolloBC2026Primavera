@@ -78,8 +78,6 @@ codeunit 50100 "QC Purchase Management"
             until PurchaseLine.Next() = 0;
     end;
 
-    // TODO: limpiar el resultado tras recepción parcial
-
     [EventSubscriber(ObjectType::Table, Database::"Item Journal Line", OnAfterCopyItemJnlLineFromPurchLine, '', false, false)]
     local procedure "Item Journal Line_OnAfterCopyItemJnlLineFromPurchLine"(var ItemJnlLine: Record "Item Journal Line"; PurchLine: Record "Purchase Line")
     begin
@@ -116,5 +114,24 @@ codeunit 50100 "QC Purchase Management"
             else
                 Error(UnknownQCResultErr, PurchaseLine.FieldCaption("QC Result (Enum)"), PurchaseLine."QC Result (Enum)");
         end;
+    end;
+
+    [EventSubscriber(ObjectType::Codeunit, Codeunit::"Purch.-Post", OnPostUpdateOrderLineOnPurchHeaderReceive, '', false, false)]
+    local procedure "Purch.-Post_OnPostUpdateOrderLineOnPurchHeaderReceive"(var TempPurchLine: Record "Purchase Line"; PurchRcptHeader: Record "Purch. Rcpt. Header")
+    var
+        PurchQCMeasures: Record "Purch. QC Measures";
+    begin
+        TempPurchLine."QC Result (Option)" := TempPurchLine."QC Result (Option)"::" ";
+        Clear(TempPurchLine."QC Result (Enum)");
+        // TempPurchLine.Modify();
+
+        PurchQCMeasures.SetRange("Document Type", TempPurchLine."Document Type");
+        PurchQCMeasures.SetRange("Document No.", TempPurchLine."Document No.");
+        PurchQCMeasures.SetRange("Line No.", TempPurchLine."Line No.");
+        if PurchQCMeasures.FindSet() then
+            repeat
+                Clear(PurchQCMeasures.Value);
+                PurchQCMeasures.Modify();
+            until PurchQCMeasures.Next() = 0;
     end;
 }

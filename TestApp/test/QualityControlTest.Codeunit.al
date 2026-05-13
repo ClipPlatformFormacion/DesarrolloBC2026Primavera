@@ -126,6 +126,15 @@ codeunit 50152 "Quality Control Test"
         PurchRcptLine.Get(DocumentNo, PurchaseLine."Line No.");
         LibraryAssert.AreEqual(PurchaseLine."QC Result (Option)"::Satisfactory, PurchRcptLine."QC Result (Option)", 'El resultado no es correcto');
         LibraryAssert.AreEqual(PurchaseLine."QC Result (Enum)"::Satisfactory, PurchRcptLine."QC Result (Enum)", 'El resultado no es correcto');
+
+        // [Then] El resultado se ha limpiado en el pedido
+        PurchaseLine.GetBySystemId(PurchaseLine.SystemId);
+        LibraryAssert.AreEqual(PurchaseLine."QC Result (Option)"::" ", PurchaseLine."QC Result (Option)", 'El resultado no se ha limpiado en el pedido');
+        LibraryAssert.AreEqual(PurchaseLine."QC Result (Enum)"::" ", PurchaseLine."QC Result (Enum)", 'El resultado no se ha limpiado en el pedido');
+        if PurchQCMeasures.FindSet() then
+            repeat
+                LibraryAssert.AreEqual('', PurchQCMeasures.Value, 'El resultado no se ha limpiado en las medidas del pedido');
+            until PurchQCMeasures.Next() = 0;
     end;
 
     [Test]
