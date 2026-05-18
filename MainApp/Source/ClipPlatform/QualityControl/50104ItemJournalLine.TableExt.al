@@ -1,4 +1,7 @@
-tableextension 50104 "Item Journal Line" extends "Item Journal Line"
+namespace ClipPlatform.QualityControl;
+
+using Microsoft.Inventory.Journal;
+tableextension 50104 "50104Item Journal Line" extends "Item Journal Line"
 {
     fields
     {

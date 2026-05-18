@@ -1,3 +1,7 @@
+namespace ClipPlatform.CustomerLevel;
+
+using Microsoft.Sales.Document;
+
 interface ICustomerLevel
 {
     procedure GetDiscount(): Decimal;

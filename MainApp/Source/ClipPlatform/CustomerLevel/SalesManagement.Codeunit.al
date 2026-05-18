@@ -1,3 +1,8 @@
+namespace ClipPlatform.CustomerLevel;
+
+using Microsoft.Sales.Customer;
+using Microsoft.Sales.Document;
+
 codeunit 50104 "Sales Management"
 {
     [EventSubscriber(ObjectType::Table, Database::"Sales Header", OnAfterValidateEvent, "Sell-to Customer No.", false, false)]

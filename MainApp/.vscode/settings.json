@@ -4,7 +4,7 @@
     "CRS.FileNamePattern": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
     "CRS.FileNamePatternExtensions": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
     "CRS.FileNamePatternPageCustomizations": "<ObjectNameShort>.<ObjectTypeShortPascalCase>.al",
-    "CRS.ExtensionObjectNamePattern": "<BaseName>",
+    "CRS.ExtensionObjectNamePattern": "<ObjectId><BaseName>",
     "CRS.ReorganizeByNamespace": true,
     "al.enableCodeAnalysis": true,
     "al.codeAnalyzers": [
