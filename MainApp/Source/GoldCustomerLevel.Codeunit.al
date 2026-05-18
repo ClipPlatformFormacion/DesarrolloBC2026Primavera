@@ -4,4 +4,9 @@ codeunit 50103 "Gold Customer Level" implements ICustomerLevel
     begin
         exit(10);
     end;
+
+    procedure CustomerCanCreateSalesDocument(SalesDocumentType: Enum "Sales Document Type"): Boolean
+    begin
+        exit(true);
+    end;
 }

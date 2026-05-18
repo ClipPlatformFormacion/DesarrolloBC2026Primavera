@@ -4,4 +4,9 @@ codeunit 50102 "Silver Customer Level" implements ICustomerLevel
     begin
         exit(5);
     end;
+
+    procedure CustomerCanCreateSalesDocument(SalesDocumentType: Enum "Sales Document Type"): Boolean
+    begin
+        exit(true);
+    end;
 }
