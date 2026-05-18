@@ -1,12 +1,7 @@
-codeunit 50154 "Platinium Management"
+codeunit 50154 "Platinium Management" implements ICustomerLevel
 {
-    [EventSubscriber(ObjectType::Table, Database::Customer, OnValidateCustomerLevelOnBeforeUnknownLevelError, '', false, false)]
-    local procedure Customer_OnValidateCustomerLevelOnBeforeUnknownLevelError(var Customer: Record Customer; var Handled: Boolean)
+    procedure GetDiscount(): Decimal
     begin
-        if Customer."Customer Level" <> Customer."Customer Level"::Platinium then
-            exit;
-
-        Customer.Validate("Level Discount", 15);
-        Handled := true;
+        exit(15);
     end;
 }
