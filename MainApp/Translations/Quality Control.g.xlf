@@ -103,6 +103,11 @@
           <note from="Developer" annotates="general" priority="2">ESP="Exportar Pedido Venta"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Execute XMLPorts - Action ExportSalesOrder - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 1817177104 - Action 693393717 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Import Sales Order</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Importar Pedido Venta"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Execute XMLPorts - Action ImportSalesOrder - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 2080330587 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Quality measures</source>
           <note from="Developer" annotates="general" priority="2">ESP="Medidas calidad producto"</note>

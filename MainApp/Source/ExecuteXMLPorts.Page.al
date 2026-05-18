@@ -15,6 +15,12 @@ page 50104 "Execute XMLPorts"
                 RunObject = xmlport "Export Sales Order";
                 Image = Export;
             }
+            action(ImportSalesOrder)
+            {
+                Caption = 'Import Sales Order', comment = 'ESP="Importar Pedido Venta"';
+                RunObject = xmlport "Import Sales Order";
+                Image = Import;
+            }
         }
     }
 }
