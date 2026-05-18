@@ -93,6 +93,16 @@
           <note from="Developer" annotates="general" priority="2">ESP="El producto %1 requiere control de calidad"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit QC Purchase Management - Method CheckItemQualityControl - NamedType QCMandatoryResultErr</note>
         </trans-unit>
+        <trans-unit id="Page 1817177104 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Execute XMLPorts</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Ejecutar XMLPorts"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Execute XMLPorts - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1817177104 - Action 2826073110 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Export Sales Order</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Exportar Pedido Venta"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Execute XMLPorts - Action ExportSalesOrder - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 2080330587 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Quality measures</source>
           <note from="Developer" annotates="general" priority="2">ESP="Medidas calidad producto"</note>
