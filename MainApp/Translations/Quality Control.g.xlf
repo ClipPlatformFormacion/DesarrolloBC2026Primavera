@@ -3,6 +3,21 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="Quality Control">
     <body>
       <group id="body">
+        <trans-unit id="Table 1936001480 - Field 1296262074 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>MyField</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Vendor - Field MyField - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1936001480 - Field 3544566346 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>OtroCampo</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Vendor - Field OtroCampo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1072081682 - Field 4252254821 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>UnCampo</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CLIP UnaTabla - Field UnCampo - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 3383884680 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Quality Control Measures</source>
           <note from="Developer" annotates="general" priority="2">ESP="Medidas control calidad producto"</note>

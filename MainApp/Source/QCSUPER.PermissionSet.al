@@ -10,5 +10,18 @@ permissionset 50100 "QC SUPER"
         page "Quality Control Measures List" = X,
         tabledata "Purch. QC Measures" = RIMD,
         table "Purch. QC Measures" = X,
-        codeunit "QC Purchase Management" = X;
+        codeunit "QC Purchase Management" = X,
+        tabledata "Clip UnaTabla" = RIMD,
+        table "Clip UnaTabla" = X,
+        report "Block Non Satisfactory Items" = X,
+        codeunit "Blank Customer Level" = X,
+        codeunit "Gold Customer Level" = X,
+        codeunit "Sales Management" = X,
+        codeunit "Silver Customer Level" = X,
+        xmlport "Export Sales Order" = X,
+        xmlport "Import Sales Order" = X,
+        page "Execute XMLPorts" = X,
+        page "Purchase QC Measures Subpage" = X,
+        tabledata ClipPlatform.Purchases.MasterData.Vendor = RIMD,
+        table ClipPlatform.Purchases.MasterData.Vendor = X;
 }

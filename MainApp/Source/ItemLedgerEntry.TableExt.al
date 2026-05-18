@@ -18,7 +18,7 @@ tableextension 50103 "Item Ledger Entry" extends "Item Ledger Entry"
         {
             Caption = 'Source Name', comment = 'ESP="Nombre procedencia mov."';
             FieldClass = FlowField;
-            CalcFormula = lookup(Vendor.Name where("No." = field("Source No.")));
+            CalcFormula = lookup(Microsoft.Purchases.Vendor.Vendor.Name where("No." = field("Source No.")));
         }
     }
 }

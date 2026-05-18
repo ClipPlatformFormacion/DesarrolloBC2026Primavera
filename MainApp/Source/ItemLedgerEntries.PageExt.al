@@ -38,7 +38,7 @@ pageextension 50103 "Item Ledger Entries" extends "Item Ledger Entries"
 
     procedure UnaLlamadaAUnaFuncion(): Text
     var
-        Vendor: Record Vendor;
+        Vendor: Record Microsoft.Purchases.Vendor.Vendor;
         Customer: Record Customer;
     begin
         case Rec."Source Type" of
