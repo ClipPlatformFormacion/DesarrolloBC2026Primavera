@@ -1,8 +1,17 @@
-enum 50101 "Customer Level"
+enum 50101 "Customer Level" implements ICustomerLevel
 {
     Extensible = true;
 
-    value(0; " ") { }
-    value(1; Silver) { }
-    value(2; Gold) { }
+    value(0; " ")
+    {
+        Implementation = ICustomerLevel = "Blank Customer Level";
+    }
+    value(1; Silver)
+    {
+        Implementation = ICustomerLevel = "Silver Customer Level";
+    }
+    value(2; Gold)
+    {
+        Implementation = ICustomerLevel = "Gold Customer Level";
+    }
 }
