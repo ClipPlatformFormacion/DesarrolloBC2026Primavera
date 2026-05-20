@@ -4,10 +4,19 @@ page 50104 "Execute XMLPorts"
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Administration;
-    PromotedActionCategoriesML = ENU = 'New,Process,Report,MyCategory', ESP = 'Nuevo,Acciones,Informes,MiCategoria';
 
     actions
     {
+        area(Promoted)
+        {
+            group(UnGrupo)
+            {
+                ShowAs = SplitButton;
+                actionref(ExportSalesOrderPromoted; ExportSalesOrder) { }
+                actionref(ImportSalesOrderPromoted; ImportSalesOrder) { }
+            }
+            actionref(ExecuteQueryPromoted; ExecuteQuery) { }
+        }
         area(Navigation)
         {
             action(ExportSalesOrder)
@@ -15,8 +24,6 @@ page 50104 "Execute XMLPorts"
                 Caption = 'Export Sales Order', comment = 'ESP="Exportar Pedido Venta"';
                 RunObject = xmlport "Export Sales Order";
                 Image = Export;
-                Promoted = true;
-                PromotedCategory = New;
             }
             action(ImportSalesOrder)
             {
@@ -32,16 +39,11 @@ page 50104 "Execute XMLPorts"
                 Caption = 'Execute Query', comment = 'ESP="Ejecutar Query"';
                 RunObject = query "Item Query";
                 Image = ExecuteAndPostBatch;
-                Promoted = true;
-                PromotedOnly = true;
-                PromotedCategory = Process;
             }
             action(CodeQuery)
             {
                 Caption = 'Code query', comment = 'ESP="Ejecutar query por código"';
                 Image = ExecuteBatch;
-                Promoted = true;
-                PromotedCategory = Category4;
 
                 trigger OnAction()
                 var
