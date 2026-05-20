@@ -3,6 +3,72 @@
   <file datatype="xml" source-language="en-US" target-language="es-ES" original="Quality Control">
     <body>
       <group id="body">
+        <trans-unit id="TableExtension 1994964448 - Field 2199286534 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
+          <source>Customer Level</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Customer - Field Customer Level - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1994964448 - Field 2875961301 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
+          <source>Level Discount</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Customer - Field Level Discount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 1188926910 - Field 3544566346 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 346005766">
+          <source>OtroCampo</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 50106Microsoft - Field OtroCampo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1936001480 - Field 1296262074 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>MyField</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Vendor - Field MyField - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1936001480 - Field 3544566346 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>OtroCampo</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Vendor - Field OtroCampo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Query 2471533353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item query</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Consulta productos"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Query Item Query - Property Caption</note>
+          <target>Consulta productos</target>
+        </trans-unit>
+        <trans-unit id="Query 2471533353 - QueryColumn 714791889 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vendor City</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Ciudad proveedor"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Query Item Query - QueryColumn City - Property Caption</note>
+          <target>Ciudad proveedor</target>
+        </trans-unit>
+        <trans-unit id="Query 2471533353 - QueryColumn 2961552353 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vendor Name</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Nombre proveedor"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Query Item Query - QueryColumn Name - Property Caption</note>
+          <target>Nombre proveedor</target>
+        </trans-unit>
+        <trans-unit id="TableExtension 1188926910 - Field 3382814931 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 346005766">
+          <source>QC Result (Enum)</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Resultado CC (Enum)"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 50104Item Journal Line - Field QC Result (Enum) - Property Caption</note>
+          <target>Resultado CC (Enum)</target>
+        </trans-unit>
+        <trans-unit id="TableExtension 1188926910 - Field 4046106435 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 346005766">
+          <source>QC Result (Option)</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Resultado CC (Option)"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 50104Item Journal Line - Field QC Result (Option) - Property Caption</note>
+          <target>Resultado CC (Option)</target>
+        </trans-unit>
+        <trans-unit id="TableExtension 1188926910 - Field 4046106435 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 346005766">
+          <source> ,Satisfactory,Non Satisfactory</source>
+          <note from="Developer" annotates="general" priority="2">ESP=" ,Satisfactorio,No Satisfactorio"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 50104Item Journal Line - Field QC Result (Option) - Property OptionCaption</note>
+          <target> ,Satisfactorio,No Satisfactorio</target>
+        </trans-unit>
+        <trans-unit id="Table 1072081682 - Field 4252254821 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>UnCampo</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table CLIP UnaTabla - Field UnCampo - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 3383884680 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Quality Control Measures</source>
           <note from="Developer" annotates="general" priority="2">ESP="Medidas control calidad producto"</note>
@@ -114,6 +180,18 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page Execute XMLPorts - Property Caption</note>
           <target>Ejecutar XMLPorts</target>
         </trans-unit>
+        <trans-unit id="Page 1817177104 - Action 2085203049 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code query</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Ejecutar query por código"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Execute XMLPorts - Action CodeQuery - Property Caption</note>
+          <target>Ejecutar query por código</target>
+        </trans-unit>
+        <trans-unit id="Page 1817177104 - Action 1916069359 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Execute Query</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Ejecutar Query"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Execute XMLPorts - Action ExecuteQuery - Property Caption</note>
+          <target>Ejecutar Query</target>
+        </trans-unit>
         <trans-unit id="Page 1817177104 - Action 2826073110 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Export Sales Order</source>
           <note from="Developer" annotates="general" priority="2">ESP="Exportar Pedido Venta"</note>
@@ -207,34 +285,6 @@
           <note from="Developer" annotates="general" priority="2">ESP="Especifica si el producto tiene que pasar por un proceso de control de calidad en la recepción de compras"</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Item Card Extension - Control Requieres Quality Control - Property ToolTip</note>
           <target>Especifica si el producto tiene que pasar por un proceso de control de calidad en la recepción de compras</target>
-        </trans-unit>
-        <trans-unit id="TableExtension 1994964448 - Field 2199286534 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
-          <source>Customer Level</source>
-          <note from="Developer" annotates="general" priority="2"/>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Customer - Field Customer Level - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 1994964448 - Field 2875961301 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
-          <source>Level Discount</source>
-          <note from="Developer" annotates="general" priority="2"/>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Customer - Field Level Discount - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="TableExtension 346005766 - Field 3382814931 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 346005766">
-          <source>QC Result (Enum)</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Resultado CC (Enum)"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Item Journal Line - Field QC Result (Enum) - Property Caption</note>
-          <target>Resultado CC (Enum)</target>
-        </trans-unit>
-        <trans-unit id="TableExtension 346005766 - Field 4046106435 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 346005766">
-          <source>QC Result (Option)</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Resultado CC (Option)"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Item Journal Line - Field QC Result (Option) - Property Caption</note>
-          <target>Resultado CC (Option)</target>
-        </trans-unit>
-        <trans-unit id="TableExtension 346005766 - Field 4046106435 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 346005766">
-          <source> ,Satisfactory,Non Satisfactory</source>
-          <note from="Developer" annotates="general" priority="2">ESP=" ,Satisfactorio,No Satisfactorio"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Item Journal Line - Field QC Result (Option) - Property OptionCaption</note>
-          <target> ,Satisfactorio,No Satisfactorio</target>
         </trans-unit>
         <trans-unit id="TableExtension 4089294192 - Field 3382814931 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4089294192">
           <source>QC Result (Enum)</source>
