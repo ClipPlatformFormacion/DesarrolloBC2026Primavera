@@ -308,6 +308,11 @@
           <note from="Developer" annotates="general" priority="2">ESP="Nº de Unidades No Satisfactorias"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Report Block Non Satisfactory Items - Control NoOfNonSatisfactoryUnitsLabel - Property Caption</note>
         </trans-unit>
+        <trans-unit id="PageExtension 108737967 - View 2923686772 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3595318222">
+          <source>Satisfactory</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Satisfactorio"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 50103Item Ledger Entries - View Satisfactory - Property Caption</note>
+        </trans-unit>
         <trans-unit id="PageExtension 742805820 - Action 1407905489 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
           <source>Quality Control Measures</source>
           <note from="Developer" annotates="general" priority="2">ESP="Medidas control calidad"</note>
