@@ -23,5 +23,9 @@ permissionset 50100 "QC SUPER"
         page "Execute XMLPorts" = X,
         page "Purchase QC Measures Subpage" = X,
         tabledata ClipPlatform.Purchases.MasterData.Vendor = RIMD,
-        table ClipPlatform.Purchases.MasterData.Vendor = X;
+        table ClipPlatform.Purchases.MasterData.Vendor = X,
+        tabledata "Quality Control Cue" = RIMD,
+        table "Quality Control Cue" = X,
+        page "Quality Control RoleCenter" = X,
+        query "Item Query" = X;
 }

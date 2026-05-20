@@ -28,6 +28,11 @@
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table Vendor - Field OtroCampo - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Profile 880892238 - Property 4111922599" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Profile Description</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Profile Quality Control - Property ProfileDescription</note>
+        </trans-unit>
         <trans-unit id="Table 1072081682 - Field 4252254821 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>UnCampo</source>
           <note from="Developer" annotates="general" priority="2"/>
