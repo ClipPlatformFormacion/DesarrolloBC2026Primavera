@@ -28,6 +28,36 @@
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">Table Vendor - Field OtroCampo - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 1311302651 - Field 1520093583 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Items that Requiere QC</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Quality Control Cue - Field Items that Requiere QC - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1311302651 - Field 970416965 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PK</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Quality Control Cue - Field PK - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1311302651 - Field 1973659168 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Receptions - NonSatisfactory</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Quality Control Cue - Field Receptions - NonSatisfactory - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1311302651 - Field 795367821 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Receptions - Satisfactory</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Quality Control Cue - Field Receptions - Satisfactory - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3303398863 - Action 2015624257 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open a sales journal where you can batch post sales transactions to G/L, bank, customer, vendor and fixed assets accounts.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Quality Control RoleCenter - Action Sales &amp;Journal - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3303398863 - Action 2015624257 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales &amp;Journal</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Quality Control RoleCenter - Action Sales &amp;Journal - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Profile 880892238 - Property 4111922599" size-unit="char" translate="yes" xml:space="preserve">
           <source>Profile Description</source>
           <note from="Developer" annotates="general" priority="2"/>

@@ -4,16 +4,19 @@ page 50104 "Execute XMLPorts"
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Administration;
+    PromotedActionCategoriesML = ENU = 'New,Process,Report,MyCategory', ESP = 'Nuevo,Acciones,Informes,MiCategoria';
 
     actions
     {
-        area(Processing)
+        area(Navigation)
         {
             action(ExportSalesOrder)
             {
                 Caption = 'Export Sales Order', comment = 'ESP="Exportar Pedido Venta"';
                 RunObject = xmlport "Export Sales Order";
                 Image = Export;
+                Promoted = true;
+                PromotedCategory = New;
             }
             action(ImportSalesOrder)
             {
@@ -21,16 +24,24 @@ page 50104 "Execute XMLPorts"
                 RunObject = xmlport "Import Sales Order";
                 Image = Import;
             }
+        }
+        area(Processing)
+        {
             action(ExecuteQuery)
             {
                 Caption = 'Execute Query', comment = 'ESP="Ejecutar Query"';
                 RunObject = query "Item Query";
                 Image = ExecuteAndPostBatch;
+                Promoted = true;
+                PromotedOnly = true;
+                PromotedCategory = Process;
             }
             action(CodeQuery)
             {
                 Caption = 'Code query', comment = 'ESP="Ejecutar query por código"';
                 Image = ExecuteBatch;
+                Promoted = true;
+                PromotedCategory = Category4;
 
                 trigger OnAction()
                 var

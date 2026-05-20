@@ -46,6 +46,26 @@
           <note from="Xliff Generator" annotates="general" priority="3">Query Item Query - QueryColumn Name - Property Caption</note>
           <target>Nombre proveedor</target>
         </trans-unit>
+        <trans-unit id="Table 1311302651 - Field 1520093583 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Items that Requiere QC</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Quality Control Cue - Field Items that Requiere QC - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1311302651 - Field 970416965 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PK</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Quality Control Cue - Field PK - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1311302651 - Field 1973659168 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Receptions - NonSatisfactory</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Quality Control Cue - Field Receptions - NonSatisfactory - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1311302651 - Field 795367821 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Receptions - Satisfactory</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Quality Control Cue - Field Receptions - Satisfactory - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 3303398863 - Action 1412245283 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Purchase Order</source>
           <note from="Developer" annotates="general" priority="2">ESP="Pedido compra"</note>
@@ -63,6 +83,16 @@
           <note from="Developer" annotates="general" priority="2">ESP="Pedidos compra"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Quality Control RoleCenter - Action PurchaseOrder - Property Caption</note>
           <target>Pedidos compra</target>
+        </trans-unit>
+        <trans-unit id="Page 3303398863 - Action 2015624257 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open a sales journal where you can batch post sales transactions to G/L, bank, customer, vendor and fixed assets accounts.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Quality Control RoleCenter - Action Sales &amp;Journal - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3303398863 - Action 2015624257 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales &amp;Journal</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Quality Control RoleCenter - Action Sales &amp;Journal - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3303398863 - Action 1554554962 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Items</source>
@@ -233,18 +263,6 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page Execute XMLPorts - Property Caption</note>
           <target>Ejecutar XMLPorts</target>
         </trans-unit>
-        <trans-unit id="Page 1817177104 - Action 2085203049 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Code query</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Ejecutar query por código"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Execute XMLPorts - Action CodeQuery - Property Caption</note>
-          <target>Ejecutar query por código</target>
-        </trans-unit>
-        <trans-unit id="Page 1817177104 - Action 1916069359 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Execute Query</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Ejecutar Query"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Execute XMLPorts - Action ExecuteQuery - Property Caption</note>
-          <target>Ejecutar Query</target>
-        </trans-unit>
         <trans-unit id="Page 1817177104 - Action 2826073110 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Export Sales Order</source>
           <note from="Developer" annotates="general" priority="2">ESP="Exportar Pedido Venta"</note>
@@ -256,6 +274,18 @@
           <note from="Developer" annotates="general" priority="2">ESP="Importar Pedido Venta"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Execute XMLPorts - Action ImportSalesOrder - Property Caption</note>
           <target>Importar Pedido Venta</target>
+        </trans-unit>
+        <trans-unit id="Page 1817177104 - Action 2085203049 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code query</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Ejecutar query por código"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Execute XMLPorts - Action CodeQuery - Property Caption</note>
+          <target>Ejecutar query por código</target>
+        </trans-unit>
+        <trans-unit id="Page 1817177104 - Action 1916069359 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Execute Query</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Ejecutar Query"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Execute XMLPorts - Action ExecuteQuery - Property Caption</note>
+          <target>Ejecutar Query</target>
         </trans-unit>
         <trans-unit id="Page 2080330587 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Quality measures</source>
@@ -320,6 +350,12 @@
           <note from="Developer" annotates="general" priority="2">ESP="Nº de Unidades No Satisfactorias"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Report Block Non Satisfactory Items - Control NoOfNonSatisfactoryUnitsLabel - Property Caption</note>
           <target>Nº de Unidades No Satisfactorias</target>
+        </trans-unit>
+        <trans-unit id="PageExtension 108737967 - View 2923686772 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3595318222">
+          <source>Satisfactory</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Satisfactorio"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 50103Item Ledger Entries - View Satisfactory - Property Caption</note>
+          <target>Satisfactorio</target>
         </trans-unit>
         <trans-unit id="PageExtension 742805820 - Action 1407905489 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
           <source>Quality Control Measures</source>

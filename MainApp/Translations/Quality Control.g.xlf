@@ -233,16 +233,6 @@
           <note from="Developer" annotates="general" priority="2">ESP="Ejecutar XMLPorts"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Execute XMLPorts - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 1817177104 - Action 2085203049 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Code query</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Ejecutar query por código"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Execute XMLPorts - Action CodeQuery - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 1817177104 - Action 1916069359 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Execute Query</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Ejecutar Query"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Execute XMLPorts - Action ExecuteQuery - Property Caption</note>
-        </trans-unit>
         <trans-unit id="Page 1817177104 - Action 2826073110 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Export Sales Order</source>
           <note from="Developer" annotates="general" priority="2">ESP="Exportar Pedido Venta"</note>
@@ -252,6 +242,16 @@
           <source>Import Sales Order</source>
           <note from="Developer" annotates="general" priority="2">ESP="Importar Pedido Venta"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Execute XMLPorts - Action ImportSalesOrder - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1817177104 - Action 2085203049 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code query</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Ejecutar query por código"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Execute XMLPorts - Action CodeQuery - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1817177104 - Action 1916069359 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Execute Query</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Ejecutar Query"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Execute XMLPorts - Action ExecuteQuery - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 2080330587 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Quality measures</source>
