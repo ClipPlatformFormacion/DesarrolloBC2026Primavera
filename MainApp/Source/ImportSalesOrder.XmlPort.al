@@ -3,6 +3,7 @@ xmlport 50101 "Import Sales Order"
     Direction = Import;
     FormatEvaluate = Xml;
     UseRequestPage = false;
+    UseDefaultNamespace = true;
 
     schema
     {
