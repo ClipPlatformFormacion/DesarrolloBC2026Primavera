@@ -1,4 +1,4 @@
-tableextension 50100 ItemExtension extends Item
+tableextension 50100 "50100Item" extends Item
 {
     fields
     {
@@ -25,6 +25,15 @@ tableextension 50100 ItemExtension extends Item
         {
             FieldClass = FlowFilter;
             TableRelation = Location;
+        }
+
+        modify(Blocked)
+        {
+            trigger OnAfterValidate()
+            begin
+                if Rec."No." = '1906-S' then
+                    Error('Error del producto 1906-S');
+            end;
         }
     }
 }

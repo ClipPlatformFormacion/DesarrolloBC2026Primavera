@@ -55,26 +55,13 @@ report 50100 "Block Non Satisfactory Items"
 
             trigger OnAfterGetRecord()
             var
-                BlockReasonMsg: Label 'Blocked by report 50100', Comment = 'ESP="Bloqueado por report 5100"';
+                BloquearProducto: Codeunit "Bloquear Producto";
             begin
-                Counter := Counter + 1;
-                Clear(ItemModified);
-
-                if CheckItem(Item) then begin
-                    Item.CalcFields("Non-satisfactory Purch. (Qty.)");
-                    // if Item."Non-satisfactory Purch. (Qty.)" > NoOfNonSatisfactoryUnits then begin
-                    Item.Validate(Blocked, true);
-                    Item.Validate("Block Reason", BlockReasonMsg);
-                    Item.Modify(true); // Aqui se abre la transaccion
-                    ModifiedCounter += 1;
-                    ItemModified := true;
-                    // end;
-                end else begin
-                    Item.Validate(Blocked, false);
+                if not BloquearProducto.Run(Item) then begin
+                    Item.Blocked := false;
                     Item."Block Reason" := GetLastErrorText();
-                    Item.Modify(true);
+                    Item.Modify();
                 end;
-
                 Commit(); // Aqui se cierra la transacción
             end;
 
@@ -139,13 +126,6 @@ report 50100 "Block Non Satisfactory Items"
 
         if not Confirm('¿Estás seguro que quieres bloquear los productos con más de %1 unidades no satisfactorias?', false, NoOfNonSatisfactoryUnits) then
             Error('Proceso detenido a petición del usuario');
-    end;
-
-    [TryFunction]
-    procedure CheckItem(Item: Record Item)
-    begin
-        if item."No." = '1936-S' then
-            Error('Se ha producido un error en el producto %1', Item."No.");
     end;
 
     var
