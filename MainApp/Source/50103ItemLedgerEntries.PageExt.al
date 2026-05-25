@@ -20,11 +20,13 @@ pageextension 50103 "50103Item Ledger Entries" extends "Item Ledger Entries"
             {
                 ApplicationArea = All;
             }
+#pragma warning disable AA0225
             field(Expresion1; 2) { ApplicationArea = All; }
             field(Expresion2; 'un texto') { ApplicationArea = All; }
             field(Expresion3; 1 + 2) { ApplicationArea = All; }
             field(Expresion4; UnaLlamadaAUnaFuncion()) { ApplicationArea = All; }
             field(Expresion5; UnaVariable) { ApplicationArea = All; }
+#pragma warning restore
         }
     }
 

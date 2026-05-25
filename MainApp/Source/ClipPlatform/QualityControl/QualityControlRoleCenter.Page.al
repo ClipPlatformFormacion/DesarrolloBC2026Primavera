@@ -1,10 +1,11 @@
 
 namespace ClipPlatform.QualityControl;
+
 using Microsoft.Finance.GeneralLedger.Journal;
 using Microsoft.Foundation.Task;
 using Microsoft.Inventory.Item;
-using Microsoft.Purchases.Vendor;
 using Microsoft.Purchases.Document;
+using Microsoft.Purchases.Vendor;
 using System.Visualization;
 
 page 50105 "Quality Control RoleCenter"

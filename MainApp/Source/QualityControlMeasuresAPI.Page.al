@@ -16,9 +16,9 @@ page 50107 "Quality Control Measures API"
         {
             repeater(RepeaterControl)
             {
-                field(Measure; Rec.Measure) { }
-                field(Description; Rec.Description) { }
-                field(Blocked; Rec.Blocked) { }
+                field(measure; Rec.Measure) { }
+                field(description; Rec.Description) { }
+                field(blocked; Rec.Blocked) { }
             }
         }
     }

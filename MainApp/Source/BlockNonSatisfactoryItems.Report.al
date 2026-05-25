@@ -17,7 +17,7 @@ report 50100 "Block Non Satisfactory Items"
             column(Description; Description) { IncludeCaption = true; }
             column(NonSatisfactoryPurchQty; "Non-satisfactory Purch. (Qty.)") { IncludeCaption = true; }
             column(ItemModified; Format(ItemModified)) { }
-            column(ItemModifiedCaption; ItemModifiedCaption) { }
+            column(ItemModifiedCaption; ItemModifiedCaptionLbl) { }
 
             dataitem(ItemLedgerEntry; "Item Ledger Entry")
             {
@@ -50,7 +50,9 @@ report 50100 "Block Non Satisfactory Items"
 
             trigger OnPreDataItem()
             begin
+#pragma warning disable AA0205
                 Message('OnPreDataItem Item %1', Counter);
+#pragma warning restore
             end;
 
             trigger OnAfterGetRecord()
@@ -59,7 +61,7 @@ report 50100 "Block Non Satisfactory Items"
             begin
                 if not BloquearProducto.Run(Item) then begin
                     Item.Blocked := false;
-                    Item."Block Reason" := GetLastErrorText();
+                    Item."Block Reason" := CopyStr(GetLastErrorText(), 1, MaxStrLen(Item."Block Reason"));
                     Item.Modify();
                 end;
                 Commit(); // Aqui se cierra la transacción
@@ -67,7 +69,9 @@ report 50100 "Block Non Satisfactory Items"
 
             trigger OnPostDataItem()
             begin
+#pragma warning disable AA0205
                 Message('OnPostDataItem Item Total %1 Modificados %2', Counter, ModifiedCounter);
+#pragma warning restore
             end;
         }
     }
@@ -132,5 +136,5 @@ report 50100 "Block Non Satisfactory Items"
         Counter, ModifiedCounter : Integer;
         NoOfNonSatisfactoryUnits: Decimal;
         ItemModified: Boolean;
-        ItemModifiedCaption: TextConst ENU = 'Item Modified', ESP = 'Producto Modificado';
+        ItemModifiedCaptionLbl: Label 'Item Modified', Comment = 'ESP="Producto Modificado"';
 }

@@ -91,7 +91,7 @@ codeunit 50100 "QC Purchase Management"
     local procedure "Purch.-Post_OnAfterPostItemJnlLine"(var ItemJournalLine: Record "Item Journal Line"; var PurchaseLine: Record "Purchase Line"; var PurchaseHeader: Record "Purchase Header"; var ItemJnlPostLine: Codeunit "Item Jnl.-Post Line"; var WhseJnlRegisterLine: Codeunit "Whse. Jnl.-Register Line"; var WhseReceive: Boolean; var WhseShip: Boolean; var WhseRcptHeader: Record "Warehouse Receipt Header"; var WhseShptHeader: Record "Warehouse Shipment Header")
     var
         NegativeAdjustmentItemJournalLine: Record "Item Journal Line";
-        UnknownQCResultErr: TextConst ENU = 'Unknown %1: %2', ESP = '%1 desconocido: %2';
+        UnknownQCResultErr: Label 'Unknown %1: %2', Comment = 'ESP="%1 desconocido: %2"';
     begin
         case PurchaseLine."QC Result (Enum)" of
             PurchaseLine."QC Result (Enum)"::" ", PurchaseLine."QC Result (Enum)"::Satisfactory:

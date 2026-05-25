@@ -62,6 +62,7 @@ page 50104 "Execute XMLPorts"
             }
             action(CrearCliente)
             {
+                Image = "8ball";
                 trigger OnAction()
                 var
                     MiWebService: Codeunit "Mi WebService";

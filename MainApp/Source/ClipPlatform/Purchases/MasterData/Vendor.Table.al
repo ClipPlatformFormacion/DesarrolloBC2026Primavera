@@ -2,6 +2,7 @@ namespace ClipPlatform.Purchases.MasterData;
 
 using System.Globalization;
 
+#pragma warning disable PTE0025, AS0130
 table 50104 Vendor
 {
     DataClassification = CustomerContent;
@@ -18,3 +19,4 @@ table 50104 Vendor
         }
     }
 }
+#pragma warning restore PTE0025, AS0130
