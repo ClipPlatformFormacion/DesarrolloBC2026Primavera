@@ -60,17 +60,20 @@ report 50100 "Block Non Satisfactory Items"
                 Counter := Counter + 1;
                 Clear(ItemModified);
 
-                if item."No." = '1936-S' then
-                    Error('Se ha producido un error en el producto %1', Item."No.");
-
-                Item.CalcFields("Non-satisfactory Purch. (Qty.)");
-                // if Item."Non-satisfactory Purch. (Qty.)" > NoOfNonSatisfactoryUnits then begin
-                Item.Validate(Blocked, true);
-                Item.Validate("Block Reason", BlockReasonMsg);
-                Item.Modify(true); // Aqui se abre la transaccion
-                ModifiedCounter += 1;
-                ItemModified := true;
-                // end;
+                if CheckItem(Item) then begin
+                    Item.CalcFields("Non-satisfactory Purch. (Qty.)");
+                    // if Item."Non-satisfactory Purch. (Qty.)" > NoOfNonSatisfactoryUnits then begin
+                    Item.Validate(Blocked, true);
+                    Item.Validate("Block Reason", BlockReasonMsg);
+                    Item.Modify(true); // Aqui se abre la transaccion
+                    ModifiedCounter += 1;
+                    ItemModified := true;
+                    // end;
+                end else begin
+                    Item.Validate(Blocked, false);
+                    Item."Block Reason" := GetLastErrorText();
+                    Item.Modify(true);
+                end;
 
                 Commit(); // Aqui se cierra la transacción
             end;
@@ -136,6 +139,13 @@ report 50100 "Block Non Satisfactory Items"
 
         if not Confirm('¿Estás seguro que quieres bloquear los productos con más de %1 unidades no satisfactorias?', false, NoOfNonSatisfactoryUnits) then
             Error('Proceso detenido a petición del usuario');
+    end;
+
+    [TryFunction]
+    procedure CheckItem(Item: Record Item)
+    begin
+        if item."No." = '1936-S' then
+            Error('Se ha producido un error en el producto %1', Item."No.");
     end;
 
     var
