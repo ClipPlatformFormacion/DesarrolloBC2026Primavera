@@ -1,3 +1,6 @@
+# https://businesscentralgeek.com/how-to-use-vs-code-rest-client-to-test-business-central-apis
+# https://businesscentralgeek.com/how-to-use-postman-to-connect-with-business-central-apis
+
 @clientid = <aqui el id de cliente de la aplicación de azure>
 @clientsecret = <aqui el secreto creado en azure>
 @scope = https://api.businesscentral.dynamics.com/.default

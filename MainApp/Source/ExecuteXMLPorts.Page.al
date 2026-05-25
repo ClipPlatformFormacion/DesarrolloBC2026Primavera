@@ -60,6 +60,15 @@ page 50104 "Execute XMLPorts"
                     Message(Format(Counter));
                 end;
             }
+            action(CrearCliente)
+            {
+                trigger OnAction()
+                var
+                    MiWebService: Codeunit "Mi WebService";
+                begin
+                    MiWebService.CrearClienteConParametros('un nombre desde BC', 'una direccion desde BC', '679223344', 2500);
+                end;
+            }
         }
     }
 

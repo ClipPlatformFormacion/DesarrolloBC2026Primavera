@@ -26,6 +26,10 @@ codeunit 50105 "Mi WebService"
     var
         Customer: Record Customer;
     begin
+        if GuiAllowed() then
+            if not Confirm('¿Estás seguro que quieres crear el cliente') then
+                Error('');
+
         Customer.Init();
         Customer.Validate(Name, Name);
         Customer.Validate(Address, Address);
