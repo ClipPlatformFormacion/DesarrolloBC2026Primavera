@@ -11,7 +11,7 @@ report 50100 "Block Non Satisfactory Items"
         dataitem(Item; Item)
         {
             RequestFilterFields = "No.", Description, Inventory;
-            DataItemTableView = where("Non-satisfactory Purch. (Qty.)" = filter(<> 0));
+            // DataItemTableView = where("Non-satisfactory Purch. (Qty.)" = filter(<> 0));
 
             column(No; "No.") { IncludeCaption = true; }
             column(Description; Description) { IncludeCaption = true; }
@@ -60,14 +60,19 @@ report 50100 "Block Non Satisfactory Items"
                 Counter := Counter + 1;
                 Clear(ItemModified);
 
+                if item."No." = '1936-S' then
+                    Error('Se ha producido un error en el producto %1', Item."No.");
+
                 Item.CalcFields("Non-satisfactory Purch. (Qty.)");
-                if Item."Non-satisfactory Purch. (Qty.)" > NoOfNonSatisfactoryUnits then begin
-                    Item.Validate(Blocked, true);
-                    Item.Validate("Block Reason", BlockReasonMsg);
-                    Item.Modify(true);
-                    ModifiedCounter += 1;
-                    ItemModified := true;
-                end;
+                // if Item."Non-satisfactory Purch. (Qty.)" > NoOfNonSatisfactoryUnits then begin
+                Item.Validate(Blocked, true);
+                Item.Validate("Block Reason", BlockReasonMsg);
+                Item.Modify(true); // Aqui se abre la transaccion
+                ModifiedCounter += 1;
+                ItemModified := true;
+                // end;
+
+                Commit(); // Aqui se cierra la transacción
             end;
 
             trigger OnPostDataItem()
