@@ -11,7 +11,7 @@ codeunit 50151 GetMin
     var
         Valor: Integer;
         FirstIteration: Boolean;
-        i: Integer;
+    // i: Integer;
     begin
         FirstIteration := true;
 
