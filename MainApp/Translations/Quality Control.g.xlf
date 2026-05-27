@@ -233,6 +233,11 @@
           <note from="Developer" annotates="general" priority="2">ESP="El producto %1 requiere control de calidad"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit QC Purchase Management - Method CheckItemQualityControl - NamedType QCMandatoryResultErr</note>
         </trans-unit>
+        <trans-unit id="Codeunit 2943809854 - Method 618828466 - NamedType 2597132754" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unknown %1: %2</source>
+          <note from="Developer" annotates="general" priority="2">ESP="%1 desconocido: %2"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit QC Purchase Management - Method Purch.-Post_OnAfterPostItemJnlLine - NamedType UnknownQCResultErr</note>
+        </trans-unit>
         <trans-unit id="Page 1817177104 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Execute XMLPorts</source>
           <note from="Developer" annotates="general" priority="2">ESP="Ejecutar XMLPorts"</note>
@@ -287,6 +292,11 @@
           <source>Block Non Satisfactory Items</source>
           <note from="Developer" annotates="general" priority="2">ESP="Bloquear productos no satisfactorios"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Report Block Non Satisfactory Items - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 2475580156 - NamedType 3192136812" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Modified</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Producto Modificado"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Block Non Satisfactory Items - NamedType ItemModifiedCaptionLbl</note>
         </trans-unit>
         <trans-unit id="Report 2475580156 - RequestPage 2516438534 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
           <source>Teaching tip title</source>

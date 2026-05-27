@@ -70,4 +70,25 @@ codeunit 50150 "Test Framework"
         if Resultado <> Value2 then
             Error('El resultado es incorrecto');
     end;
+
+    [Test]
+    procedure GetMin004()
+    var
+        GetMin: Codeunit GetMin;
+        Valores: List of [Integer];
+        Resultado: Integer;
+    begin
+        // [Scenario] Cuando a una función GetMin le pasamos los valores 11 y 11, el resultado es cualquiera de los dos
+
+        // [Given] Los valores 11 y 11        
+        Valores.Add(11);
+        Valores.Add(11);
+        Valores.Add(2);
+        Valores.Add(5);
+        // [When] Llamamos a la función GetMin
+        Resultado := GetMin.GetMin(Valores);
+        // [Then] El resultado tiene que ser cualquiera de los 2
+        if Resultado <> 2 then
+            Error('El resultado es incorrecto');
+    end;
 }
