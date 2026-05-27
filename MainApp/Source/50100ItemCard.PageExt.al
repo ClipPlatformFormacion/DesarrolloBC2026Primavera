@@ -1,4 +1,4 @@
-pageextension 50100 "Item Card Extension" extends "Item Card"
+pageextension 50100 "50100Item Card" extends "Item Card"
 {
     layout
     {
@@ -8,7 +8,7 @@ pageextension 50100 "Item Card Extension" extends "Item Card"
             {
                 // Caption = 'Quality', Comment = 'ESP="Calidad"';
                 Caption = 'Quality', Comment = 'ESP="Calidad",FRA="Calidad en frances"';
-                field("Requieres Quality Control"; Rec."Requieres Quality Control")
+                field("Requieres Quality Control"; Rec."Requires Quality Control")
                 {
                     // CaptionML = ESP = 'Nuevo caption';
                     ApplicationArea = All;

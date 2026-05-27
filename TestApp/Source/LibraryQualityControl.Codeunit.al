@@ -5,7 +5,7 @@ codeunit 50153 "Library - Quality Control"
         LibraryInventory: Codeunit "Library - Inventory";
     begin
         LibraryInventory.CreateItem(Item);
-        Item.Validate("Requieres Quality Control", true);
+        Item.Validate("Requires Quality Control", true);
         Item.Modify(true);
 
         CreateQualityControlMeasure('MEDIDA1');

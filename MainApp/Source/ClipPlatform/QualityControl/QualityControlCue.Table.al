@@ -12,7 +12,7 @@ table 50105 "Quality Control Cue"
         field(2; "Items that Requiere QC"; Integer)
         {
             FieldClass = FlowField;
-            CalcFormula = count(Item where("Requieres Quality Control" = const(true)));
+            CalcFormula = count(Item where("Requires Quality Control" = const(true)));
             Editable = false;
         }
         field(3; "Receptions - Satisfactory"; Integer)

@@ -6,6 +6,24 @@ tableextension 50100 "50100Item" extends Item
         {
             Caption = 'Requieres Quality Control', Comment = 'ESP="Requiere control calidad"';
             DataClassification = CustomerContent;
+            ObsoleteReason = 'Este campo va a ser eliminado. Utiliza el campo "Requires Quality Control" en su lugar.';
+            ObsoleteState = Pending;
+            ObsoleteTag = '27.0';
+
+            trigger OnValidate()
+            begin
+                Rec."Requires Quality Control" := Rec."Requieres Quality Control";
+            end;
+        }
+        field(50103; "Requires Quality Control"; Boolean)
+        {
+            Caption = 'Requires Quality Control', Comment = 'ENG="Requires Quality Control"';
+            DataClassification = CustomerContent;
+
+            trigger OnValidate()
+            begin
+                Rec."Requieres Quality Control" := Rec."Requires Quality Control";
+            end;
         }
         field(50101; "Non-satisfactory Purch. (Qty.)"; Decimal)
         {
