@@ -1,10 +1,13 @@
 codeunit 50151 GetMin
 {
+    [Obsolete('Esta función va a desaparecer. Utiliza la funcion GetMin(List of [Integer] en su lugar')]
     procedure GetMin(P1: Integer; P2: Integer) Resultado: Integer
+    var
+        Datos: List of [Integer];
     begin
-        Resultado := p1;
-        if P2 < p1 then
-            Resultado := P2;
+        Datos.Add(P1);
+        Datos.Add(P2);
+        Resultado := GetMin(Datos);
     end;
 
     procedure GetMin(Data: List of [Integer]) Resultado: Decimal
@@ -23,7 +26,8 @@ codeunit 50151 GetMin
                 Resultado := Valor;
                 FirstIteration := false;
             end else
-                Resultado := GetMin(Resultado, Valor);
+                if Valor < Resultado then
+                    Resultado := Valor;
 
         // repeat
         //     i += 1;
