@@ -13,5 +13,7 @@
         "${PerTenantExtensionCop}",
         "${AppSourceCop}"
     ],
-    "al.ruleSetPath": "./.vscode/misnormas.ruleset.json"
+    "al.ruleSetPath": "./.vscode/misnormas.ruleset.json",
+    "al.namespaceTemplate": "ClipPlatform.$(parentfolder)",
+    "al.enableCodeActions": true
 }
