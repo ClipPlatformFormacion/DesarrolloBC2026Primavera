@@ -11,6 +11,7 @@ codeunit 50151 GetMin
     var
         Valor: Integer;
         FirstIteration: Boolean;
+        i: Integer;
     begin
         FirstIteration := true;
 
@@ -23,5 +24,35 @@ codeunit 50151 GetMin
                 FirstIteration := false;
             end else
                 Resultado := GetMin(Resultado, Valor);
+
+        // repeat
+        //     i += 1;
+        //     Data.Get(i, Valor);
+        //     if FirstIteration then begin
+        //         Resultado := Valor;
+        //         FirstIteration := false;
+        //     end else
+        //         Resultado := GetMin(Resultado, Valor);
+        // until i >= Data.Count();
+
+        // i := 0;
+        // while i < Data.Count() do begin
+        //     i += 1;
+        //     Data.Get(i, Valor);
+        //     if FirstIteration then begin
+        //         Resultado := Valor;
+        //         FirstIteration := false;
+        //     end else
+        //         Resultado := GetMin(Resultado, Valor);
+        // end;
+
+        // for i := 1 to Data.Count() do begin
+        //     Data.Get(i, Valor);
+        //     if FirstIteration then begin
+        //         Resultado := Valor;
+        //         FirstIteration := false;
+        //     end else
+        //         Resultado := GetMin(Resultado, Valor);
+        // end;
     end;
 }
