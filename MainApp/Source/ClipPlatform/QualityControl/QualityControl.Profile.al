@@ -6,5 +6,5 @@ profile "Quality Control"
     Caption = 'Quality Control', comment = 'ESP="Control calidad"';
     RoleCenter = "Quality Control RoleCenter";
     ProfileDescription = 'Profile Description';
-    Customizations = PageExtension50000;
+    Customizations = PageExtension50000, "50107Customer Ledger Entries";
 }

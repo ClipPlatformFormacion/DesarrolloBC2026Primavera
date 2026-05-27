@@ -413,6 +413,11 @@
           <note from="Developer" annotates="general" priority="2">ESP=" ,Satisfactorio,No Satisfactorio"</note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension Purchase Line - Field QC Result (Option) - Property OptionCaption</note>
         </trans-unit>
+        <trans-unit id="PageCustomization 2958880484 - AnalysisView 3013128780 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2393537757">
+          <source>Una Vista de Análisis</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageCustomization 50107Customer Ledger Entries - AnalysisView UnaVistaDeAnalisis - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Enum 1586726685 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source> </source>
           <note from="Developer" annotates="general" priority="2">ESP=" "</note>
