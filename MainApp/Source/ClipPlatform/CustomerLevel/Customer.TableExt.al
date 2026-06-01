@@ -11,14 +11,6 @@ tableextension 50105 Customer extends Customer
         {
             DataClassification = CustomerContent;
             AllowInCustomizations = Never;
-
-            trigger OnValidate()
-            var
-                ICustomerLevel: Interface ICustomerLevel;
-            begin
-                ICustomerLevel := Rec."Customer Level";
-                Rec.Validate("Level Discount", ICustomerLevel.GetDiscount());
-            end;
         }
         field(50101; "Level Discount"; Decimal)
         {
@@ -26,10 +18,4 @@ tableextension 50105 Customer extends Customer
             Editable = false;
         }
     }
-
-    [IntegrationEvent(false, false)]
-    procedure OnValidateCustomerLevelOnBeforeUnknownLevelError(var Customer: Record Customer; var Handled: Boolean)
-    begin
-
-    end;
 }
