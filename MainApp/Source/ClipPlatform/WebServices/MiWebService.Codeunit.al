@@ -1,4 +1,5 @@
 namespace ClipPlatform.WebServices;
+using ClipPlatform.QualityControl;
 using Microsoft.Sales.Customer;
 
 codeunit 50105 "Mi WebService"

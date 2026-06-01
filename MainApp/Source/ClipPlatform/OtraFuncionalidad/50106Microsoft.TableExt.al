@@ -7,6 +7,7 @@ tableextension 50106 "50106Microsoft" extends Microsoft.Inventory.Journal."Item 
         field(50106; OtroCampo; Code[20])
         {
             DataClassification = CustomerContent;
+            AllowInCustomizations = Never;
         }
     }
 }

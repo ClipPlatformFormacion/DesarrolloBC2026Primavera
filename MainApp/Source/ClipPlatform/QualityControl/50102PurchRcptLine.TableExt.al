@@ -1,7 +1,6 @@
-namespace ClipPlatform.QualityControl;
-
-using Microsoft.Inventory.Journal;
-tableextension 50104 "50104Item Journal Line" extends "Item Journal Line"
+﻿namespace ClipPlatform.QualityControl;
+using Microsoft.Purchases.History;
+tableextension 50102 "50102Purch. Rcpt. Line" extends "Purch. Rcpt. Line"
 {
     fields
     {
@@ -11,13 +10,11 @@ tableextension 50104 "50104Item Journal Line" extends "Item Journal Line"
             OptionMembers = " ",Satisfactory,"Non Satisfactory";
             OptionCaption = ' ,Satisfactory,Non Satisfactory', Comment = 'ESP=" ,Satisfactorio,No Satisfactorio"';
             DataClassification = CustomerContent;
-            AllowInCustomizations = Never;
         }
         field(50101; "QC Result (Enum)"; Enum "Quality Control Result")
         {
             Caption = 'QC Result (Enum)', Comment = 'ESP="Resultado CC (Enum)"';
             DataClassification = CustomerContent;
-            AllowInCustomizations = Never;
         }
     }
 }

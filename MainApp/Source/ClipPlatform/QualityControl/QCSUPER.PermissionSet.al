@@ -1,0 +1,35 @@
+namespace ClipPlatform.QualityControl;
+
+using ClipPlatform.CustomerLevel;
+using ClipPlatform.Purchases;
+permissionset 50100 "QC SUPER"
+{
+    Assignable = true;
+    Permissions = tabledata "Item Quality Control Measures" = RIMD,
+        tabledata "Quality Control Measures" = RIMD,
+        table "Item Quality Control Measures" = X,
+        table "Quality Control Measures" = X,
+        page "Item QC Measures Factbox" = X,
+        page "Item QC Measures List" = X,
+        page "Quality Control Measures List" = X,
+        tabledata "Purch. QC Measures" = RIMD,
+        table "Purch. QC Measures" = X,
+        codeunit "QC Purchase Management" = X,
+        tabledata "Clip UnaTabla" = RIMD,
+        table "Clip UnaTabla" = X,
+        report "Block Non Satisfactory Items" = X,
+        codeunit "Blank Customer Level" = X,
+        codeunit "Gold Customer Level" = X,
+        codeunit "Sales Management" = X,
+        codeunit "Silver Customer Level" = X,
+        xmlport "Export Sales Order" = X,
+        xmlport "Import Sales Order" = X,
+        page "Execute XMLPorts" = X,
+        page "Purchase QC Measures Subpage" = X,
+        tabledata ClipPlatform.Purchases.MasterData.Vendor = RIMD,
+        table ClipPlatform.Purchases.MasterData.Vendor = X,
+        tabledata "Quality Control Cue" = RIMD,
+        table "Quality Control Cue" = X,
+        page "Quality Control RoleCenter" = X,
+        query "Item Query" = X;
+}

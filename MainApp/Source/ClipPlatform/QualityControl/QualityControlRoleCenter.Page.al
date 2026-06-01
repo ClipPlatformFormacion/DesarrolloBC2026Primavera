@@ -41,6 +41,7 @@ page 50105 "Quality Control RoleCenter"
                 Caption = 'Purchase Order', comment = 'ESP="Pedido compra"';
                 RunObject = Page "Purchase Order";
                 RunPageMode = Create;
+                ToolTip = 'Create a new purchase order.';
             }
         }
         area(Processing)
@@ -64,6 +65,7 @@ page 50105 "Quality Control RoleCenter"
                     Caption = 'Items', comment = 'ESP="Productos"';
                     ApplicationArea = All;
                     RunObject = Page "Item List";
+                    ToolTip = 'Open the list of items.';
                 }
             }
             group(Purchases)
@@ -75,6 +77,7 @@ page 50105 "Quality Control RoleCenter"
                     Caption = 'Vendors', comment = 'ESP="Proveedores"';
                     ApplicationArea = All;
                     RunObject = page "Vendor List";
+                    ToolTip = 'Open the list of vendors.';
                 }
             }
         }
@@ -85,12 +88,14 @@ page 50105 "Quality Control RoleCenter"
                 Caption = 'Items', comment = 'ESP="Productos"';
                 ApplicationArea = All;
                 RunObject = Page "Item List";
+                ToolTip = 'Open the list of items.';
             }
             action(PurchaseOrder)
             {
                 Caption = 'Purchase Orders', comment = 'ESP="Pedidos compra"';
                 ApplicationArea = All;
                 RunObject = Page "Purchase Orders";
+                ToolTip = 'Open the list of purchase orders.';
             }
         }
     }

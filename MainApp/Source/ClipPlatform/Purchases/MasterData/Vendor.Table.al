@@ -11,10 +11,12 @@ table 50104 Vendor
     {
         field(1; MyField; Integer)
         {
+            AllowInCustomizations = Never;
             TableRelation = Microsoft.Inventory.Item.Item;
         }
         field(2; OtroCampo; Code[20])
         {
+            AllowInCustomizations = Never;
             TableRelation = Language;
         }
     }

@@ -8,7 +8,7 @@ table 50105 "Quality Control Cue"
 
     fields
     {
-        field(1; PK; Code[10]) { }
+        field(1; PK; Code[10]) { AllowInCustomizations = Never; }
         field(2; "Items that Requiere QC"; Integer)
         {
             FieldClass = FlowField;

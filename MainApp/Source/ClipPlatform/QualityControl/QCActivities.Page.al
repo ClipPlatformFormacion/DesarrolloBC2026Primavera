@@ -14,9 +14,9 @@ page 50106 "QC Activities"
         {
             cuegroup(ControlCalidad)
             {
-                field("Items that Requiere QC"; Rec."Items that Requiere QC") { }
-                field("Receptions - NonSatisfactory"; Rec."Receptions - NonSatisfactory") { }
-                field("Receptions - Satisfactory"; Rec."Receptions - Satisfactory") { }
+                field("Items that Requiere QC"; Rec."Items that Requiere QC") { ToolTip = 'Specifies the number of items that require quality control.'; }
+                field("Receptions - NonSatisfactory"; Rec."Receptions - NonSatisfactory") { ToolTip = 'Specifies the number of non-satisfactory purchase receptions.'; }
+                field("Receptions - Satisfactory"; Rec."Receptions - Satisfactory") { ToolTip = 'Specifies the number of satisfactory purchase receptions.'; }
             }
         }
     }

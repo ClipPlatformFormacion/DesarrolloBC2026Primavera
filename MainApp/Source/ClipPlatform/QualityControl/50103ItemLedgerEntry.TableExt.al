@@ -1,7 +1,7 @@
-namespace ClipPlatform.QualityControl;
-
-using Microsoft.Inventory.Journal;
-tableextension 50104 "50104Item Journal Line" extends "Item Journal Line"
+﻿namespace ClipPlatform.QualityControl;
+using Microsoft.Inventory.Ledger;
+using Microsoft.Purchases.Vendor;
+tableextension 50103 "50103Item Ledger Entry" extends "Item Ledger Entry"
 {
     fields
     {
@@ -18,6 +18,12 @@ tableextension 50104 "50104Item Journal Line" extends "Item Journal Line"
             Caption = 'QC Result (Enum)', Comment = 'ESP="Resultado CC (Enum)"';
             DataClassification = CustomerContent;
             AllowInCustomizations = Never;
+        }
+        field(50103; "Source Name"; Text[100])
+        {
+            Caption = 'Source Name', comment = 'ESP="Nombre procedencia mov."';
+            FieldClass = FlowField;
+            CalcFormula = lookup(Microsoft.Purchases.Vendor.Vendor.Name where("No." = field("Source No.")));
         }
     }
 }

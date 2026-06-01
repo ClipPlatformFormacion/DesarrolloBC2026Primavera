@@ -1,0 +1,32 @@
+namespace ClipPlatform.QualityControl;
+page 50103 "Purchase QC Measures Subpage"
+{
+    Caption = 'Purchase Quality measures', Comment = 'ESP="Medidas calidad compra"';
+    PageType = ListPart;
+    ApplicationArea = All;
+    UsageCategory = None;
+    SourceTable = "Purch. QC Measures";
+    // Editable = false;
+    InsertAllowed = false;
+    DeleteAllowed = false;
+
+    layout
+    {
+        area(Content)
+        {
+            repeater(RepeteaerControl)
+            {
+                field(Measure; Rec.Measure)
+                {
+                    Editable = false;
+                }
+                field("Normal Value"; Rec."Normal Value")
+                {
+                    Editable = false;
+                    ToolTip = 'Specifies the normal value for this quality control measure.';
+                }
+                field(Value; Rec.Value) { ToolTip = 'Specifies the measured value for quality control.'; }
+            }
+        }
+    }
+}

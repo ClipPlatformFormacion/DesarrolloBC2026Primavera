@@ -1,7 +1,6 @@
-namespace ClipPlatform.QualityControl;
-
-using Microsoft.Inventory.Journal;
-tableextension 50104 "50104Item Journal Line" extends "Item Journal Line"
+﻿namespace ClipPlatform.QualityControl;
+using Microsoft.Purchases.Document;
+tableextension 50101 "50101Purchase Line" extends "Purchase Line"
 {
     fields
     {

@@ -1,5 +1,6 @@
 namespace ClipPlatform.CustomerLevel;
 
+using ClipPlatform.QualityControl;
 using Microsoft.Sales.Customer;
 
 tableextension 50105 Customer extends Customer
@@ -9,6 +10,7 @@ tableextension 50105 Customer extends Customer
         field(50100; "Customer Level"; Enum "Customer Level")
         {
             DataClassification = CustomerContent;
+            AllowInCustomizations = Never;
 
             trigger OnValidate()
             var
