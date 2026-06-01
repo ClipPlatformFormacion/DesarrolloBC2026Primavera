@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
-  <file datatype="xml" source-language="en-US" target-language="fr-FR" original="Quality Control">
+  <file datatype="xml" source-language="en-US" target-language="en-GB" original="Quality Control">
     <body>
       <group id="body">
         <trans-unit id="TableExtension 1994964448 - Field 2199286534 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1994964448">
@@ -188,12 +188,6 @@
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension 50100Item Card - Action QCMeasuresAction - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 2970670087 - Control 1483341903 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
-          <source>Quality</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Calidad",FRA="Calidad en frances"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 50100Item Card - Control Quality - Property Caption</note>
-          <target>Calidad en frances</target>
-        </trans-unit>
         <trans-unit id="PageExtension 486596870 - Control 3382814931 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 526152577">
           <source>Specifies the quality control result (enum field).</source>
           <note from="Developer" annotates="general" priority="2"/>
@@ -268,6 +262,12 @@
           <source>Specifies the quality control result (option field).</source>
           <note from="Developer" annotates="general" priority="2"/>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension Posted Purchase Rcpt. Subform - Control QC Result (Option) - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="TableExtension 770316819 - Field 746757280 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
+          <source>Requires Quality Control</source>
+          <note from="Developer" annotates="general" priority="2">ENG="Requires Quality Control"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 50100Item - Field Requires Quality Control - Property Caption</note>
+          <target>Requires Quality Control</target>
         </trans-unit>
         <trans-unit id="TableExtension 770316819 - Field 4092688667 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Un FlowFilter</source>

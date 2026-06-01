@@ -46,107 +46,6 @@
           <note from="Xliff Generator" annotates="general" priority="3">Query Item Query - QueryColumn Name - Property Caption</note>
           <target>Nombre proveedor</target>
         </trans-unit>
-        <trans-unit id="Table 1311302651 - Field 1520093583 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Items that Requiere QC</source>
-          <note from="Developer" annotates="general" priority="2"/>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Quality Control Cue - Field Items that Requiere QC - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1311302651 - Field 970416965 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>PK</source>
-          <note from="Developer" annotates="general" priority="2"/>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Quality Control Cue - Field PK - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1311302651 - Field 1973659168 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Receptions - NonSatisfactory</source>
-          <note from="Developer" annotates="general" priority="2"/>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Quality Control Cue - Field Receptions - NonSatisfactory - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1311302651 - Field 795367821 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Receptions - Satisfactory</source>
-          <note from="Developer" annotates="general" priority="2"/>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Quality Control Cue - Field Receptions - Satisfactory - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 3303398863 - Action 1412245283 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Purchase Order</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Pedido compra"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Quality Control RoleCenter - Action NewPurchaseOrder - Property Caption</note>
-          <target>Pedido compra</target>
-        </trans-unit>
-        <trans-unit id="Page 3303398863 - Action 3053947817 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Items</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Productos"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Quality Control RoleCenter - Action Item2 - Property Caption</note>
-          <target>Productos</target>
-        </trans-unit>
-        <trans-unit id="Page 3303398863 - Action 1640572759 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Purchase Orders</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Pedidos compra"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Quality Control RoleCenter - Action PurchaseOrder - Property Caption</note>
-          <target>Pedidos compra</target>
-        </trans-unit>
-        <trans-unit id="Page 3303398863 - Action 2015624257 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Open a sales journal where you can batch post sales transactions to G/L, bank, customer, vendor and fixed assets accounts.</source>
-          <note from="Developer" annotates="general" priority="2"/>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Quality Control RoleCenter - Action Sales &amp;Journal - Property ToolTip</note>
-        </trans-unit>
-        <trans-unit id="Page 3303398863 - Action 2015624257 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Sales &amp;Journal</source>
-          <note from="Developer" annotates="general" priority="2"/>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Quality Control RoleCenter - Action Sales &amp;Journal - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Page 3303398863 - Action 1554554962 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Items</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Productos"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Quality Control RoleCenter - Action Items - Property Caption</note>
-          <target>Productos</target>
-        </trans-unit>
-        <trans-unit id="Page 3303398863 - Action 3276313895 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Items</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Productos"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Quality Control RoleCenter - Action Item - Property Caption</note>
-          <target>Productos</target>
-        </trans-unit>
-        <trans-unit id="Page 3303398863 - Action 1823430260 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Purchases</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Compras"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Quality Control RoleCenter - Action Purchases - Property Caption</note>
-          <target>Compras</target>
-        </trans-unit>
-        <trans-unit id="Page 3303398863 - Action 713531721 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Vendors</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Proveedores"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page Quality Control RoleCenter - Action Vendors - Property Caption</note>
-          <target>Proveedores</target>
-        </trans-unit>
-        <trans-unit id="TableExtension 1188926910 - Field 3382814931 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 346005766">
-          <source>QC Result (Enum)</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Resultado CC (Enum)"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 50104Item Journal Line - Field QC Result (Enum) - Property Caption</note>
-          <target>Resultado CC (Enum)</target>
-        </trans-unit>
-        <trans-unit id="TableExtension 1188926910 - Field 4046106435 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 346005766">
-          <source>QC Result (Option)</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Resultado CC (Option)"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 50104Item Journal Line - Field QC Result (Option) - Property Caption</note>
-          <target>Resultado CC (Option)</target>
-        </trans-unit>
-        <trans-unit id="TableExtension 1188926910 - Field 4046106435 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 346005766">
-          <source> ,Satisfactory,Non Satisfactory</source>
-          <note from="Developer" annotates="general" priority="2">ESP=" ,Satisfactorio,No Satisfactorio"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 50104Item Journal Line - Field QC Result (Option) - Property OptionCaption</note>
-          <target> ,Satisfactorio,No Satisfactorio</target>
-        </trans-unit>
-        <trans-unit id="Profile 880892238 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Quality Control</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Control calidad"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Profile Quality Control - Property Caption</note>
-          <target>Control calidad</target>
-        </trans-unit>
-        <trans-unit id="Profile 880892238 - Property 4111922599" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Profile Description</source>
-          <note from="Developer" annotates="general" priority="2"/>
-          <note from="Xliff Generator" annotates="general" priority="3">Profile Quality Control - Property ProfileDescription</note>
-        </trans-unit>
         <trans-unit id="Table 1072081682 - Field 4252254821 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>UnCampo</source>
           <note from="Developer" annotates="general" priority="2"/>
@@ -227,6 +126,26 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table Purch. QC Measures - Field Value - Property Caption</note>
           <target>Valor</target>
         </trans-unit>
+        <trans-unit id="Table 1311302651 - Field 1520093583 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Items that Requiere QC</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Quality Control Cue - Field Items that Requiere QC - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1311302651 - Field 970416965 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>PK</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Quality Control Cue - Field PK - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1311302651 - Field 1973659168 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Receptions - NonSatisfactory</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Quality Control Cue - Field Receptions - NonSatisfactory - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1311302651 - Field 795367821 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Receptions - Satisfactory</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Quality Control Cue - Field Receptions - Satisfactory - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 2087723315 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Quality Control Measures</source>
           <note from="Developer" annotates="general" priority="2">ESP="Medidas control calidad"</note>
@@ -251,11 +170,23 @@
           <note from="Xliff Generator" annotates="general" priority="3">Table Quality Control Measures - Field Measure - Property Caption</note>
           <target>Medida</target>
         </trans-unit>
+        <trans-unit id="Codeunit 189412945 - Method 990153562 - NamedType 2609102328" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Blocked by report 50100</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Bloqueado por report 5100"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Bloquear Producto - Method BloquearElProducto - NamedType BlockReasonMsg</note>
+          <target>Bloqueado por report 5100</target>
+        </trans-unit>
         <trans-unit id="Codeunit 2943809854 - Method 2965680387 - NamedType 1579777531" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item %1 requieres quality control</source>
           <note from="Developer" annotates="general" priority="2">ESP="El producto %1 requiere control de calidad"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit QC Purchase Management - Method CheckItemQualityControl - NamedType QCMandatoryResultErr</note>
           <target>El producto %1 requiere control de calidad</target>
+        </trans-unit>
+        <trans-unit id="Codeunit 2943809854 - Method 618828466 - NamedType 2597132754" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Unknown %1: %2</source>
+          <note from="Developer" annotates="general" priority="2">ESP="%1 desconocido: %2"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit QC Purchase Management - Method Purch.-Post_OnAfterPostItemJnlLine - NamedType UnknownQCResultErr</note>
+          <target>%1 desconocido: %2</target>
         </trans-unit>
         <trans-unit id="Page 1817177104 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Execute XMLPorts</source>
@@ -263,11 +194,21 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page Execute XMLPorts - Property Caption</note>
           <target>Ejecutar XMLPorts</target>
         </trans-unit>
+        <trans-unit id="Page 1817177104 - Action 2826073110 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Export a sales order to XML.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Execute XMLPorts - Action ExportSalesOrder - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 1817177104 - Action 2826073110 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Export Sales Order</source>
           <note from="Developer" annotates="general" priority="2">ESP="Exportar Pedido Venta"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Execute XMLPorts - Action ExportSalesOrder - Property Caption</note>
           <target>Exportar Pedido Venta</target>
+        </trans-unit>
+        <trans-unit id="Page 1817177104 - Action 693393717 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Import a sales order from XML.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Execute XMLPorts - Action ImportSalesOrder - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 1817177104 - Action 693393717 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Import Sales Order</source>
@@ -275,11 +216,26 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page Execute XMLPorts - Action ImportSalesOrder - Property Caption</note>
           <target>Importar Pedido Venta</target>
         </trans-unit>
+        <trans-unit id="Page 1817177104 - Action 2085203049 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Execute the item query through code.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Execute XMLPorts - Action CodeQuery - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 1817177104 - Action 2085203049 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Code query</source>
           <note from="Developer" annotates="general" priority="2">ESP="Ejecutar query por código"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Execute XMLPorts - Action CodeQuery - Property Caption</note>
           <target>Ejecutar query por código</target>
+        </trans-unit>
+        <trans-unit id="Page 1817177104 - Action 2114743821 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create a new customer via web service.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Execute XMLPorts - Action CrearCliente - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1817177104 - Action 1916069359 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Execute the item query.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Execute XMLPorts - Action ExecuteQuery - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 1817177104 - Action 1916069359 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Execute Query</source>
@@ -293,11 +249,31 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page Item QC Measures Factbox - Property Caption</note>
           <target>Medidas calidad producto</target>
         </trans-unit>
+        <trans-unit id="Page 2080330587 - Control 568743302 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the item number.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Item QC Measures Factbox - Control Item No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2080330587 - Control 2066807732 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the normal value for this quality control measure.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Item QC Measures Factbox - Control Normal Value - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 1789522066 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Item Quality measures</source>
           <note from="Developer" annotates="general" priority="2">ESP="Medidas calidad producto"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Item QC Measures List - Property Caption</note>
           <target>Medidas calidad producto</target>
+        </trans-unit>
+        <trans-unit id="Page 1789522066 - Control 568743302 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the item number.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Item QC Measures List - Control Item No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1789522066 - Control 2066807732 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the normal value for this quality control measure.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Item QC Measures List - Control Normal Value - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 3153639527 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Purchase Quality measures</source>
@@ -305,11 +281,119 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page Purchase QC Measures Subpage - Property Caption</note>
           <target>Medidas calidad compra</target>
         </trans-unit>
+        <trans-unit id="Page 3153639527 - Control 2066807732 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the normal value for this quality control measure.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Purchase QC Measures Subpage - Control Normal Value - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3153639527 - Control 1131619133 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the measured value for quality control.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Purchase QC Measures Subpage - Control Value - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2351087955 - Control 1520093583 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of items that require quality control.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page QC Activities - Control Items that Requiere QC - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2351087955 - Control 1973659168 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of non-satisfactory purchase receptions.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page QC Activities - Control Receptions - NonSatisfactory - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2351087955 - Control 795367821 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the number of satisfactory purchase receptions.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page QC Activities - Control Receptions - Satisfactory - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 12693275 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quality Control Measures</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Medidas control calidad"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Quality Control Measures API - Property Caption</note>
+          <target>Medidas control calidad</target>
+        </trans-unit>
         <trans-unit id="Page 1591750109 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Quality Control Measures</source>
           <note from="Developer" annotates="general" priority="2">ESP="Medidas control calidad"</note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Quality Control Measures List - Property Caption</note>
           <target>Medidas control calidad</target>
+        </trans-unit>
+        <trans-unit id="Page 3303398863 - Action 1412245283 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Create a new purchase order.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Quality Control RoleCenter - Action NewPurchaseOrder - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3303398863 - Action 1412245283 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Order</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Pedido compra"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Quality Control RoleCenter - Action NewPurchaseOrder - Property Caption</note>
+          <target>Pedido compra</target>
+        </trans-unit>
+        <trans-unit id="Page 3303398863 - Action 3053947817 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open the list of items.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Quality Control RoleCenter - Action Item2 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3303398863 - Action 3053947817 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Items</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Productos"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Quality Control RoleCenter - Action Item2 - Property Caption</note>
+          <target>Productos</target>
+        </trans-unit>
+        <trans-unit id="Page 3303398863 - Action 1640572759 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open the list of purchase orders.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Quality Control RoleCenter - Action PurchaseOrder - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3303398863 - Action 1640572759 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchase Orders</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Pedidos compra"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Quality Control RoleCenter - Action PurchaseOrder - Property Caption</note>
+          <target>Pedidos compra</target>
+        </trans-unit>
+        <trans-unit id="Page 3303398863 - Action 2015624257 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open a sales journal where you can batch post sales transactions to G/L, bank, customer, vendor and fixed assets accounts.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Quality Control RoleCenter - Action Sales &amp;Journal - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3303398863 - Action 2015624257 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Sales &amp;Journal</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Quality Control RoleCenter - Action Sales &amp;Journal - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3303398863 - Action 1554554962 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Items</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Productos"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Quality Control RoleCenter - Action Items - Property Caption</note>
+          <target>Productos</target>
+        </trans-unit>
+        <trans-unit id="Page 3303398863 - Action 3276313895 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open the list of items.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Quality Control RoleCenter - Action Item - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3303398863 - Action 3276313895 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Items</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Productos"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Quality Control RoleCenter - Action Item - Property Caption</note>
+          <target>Productos</target>
+        </trans-unit>
+        <trans-unit id="Page 3303398863 - Action 1823430260 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Purchases</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Compras"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Quality Control RoleCenter - Action Purchases - Property Caption</note>
+          <target>Compras</target>
+        </trans-unit>
+        <trans-unit id="Page 3303398863 - Action 713531721 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Open the list of vendors.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Quality Control RoleCenter - Action Vendors - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3303398863 - Action 713531721 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vendors</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Proveedores"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Quality Control RoleCenter - Action Vendors - Property Caption</note>
+          <target>Proveedores</target>
         </trans-unit>
         <trans-unit id="Report 2475580156 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Block Non Satisfactory Items</source>
@@ -317,11 +401,11 @@
           <note from="Xliff Generator" annotates="general" priority="3">Report Block Non Satisfactory Items - Property Caption</note>
           <target>Bloquear productos no satisfactorios</target>
         </trans-unit>
-        <trans-unit id="Report 2475580156 - ReportDataItem 3276313895 - Method 3245603402 - NamedType 2609102328" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Blocked by report 50100</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Bloqueado por report 5100"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">Report Block Non Satisfactory Items - ReportDataItem Item - Method OnAfterGetRecord - NamedType BlockReasonMsg</note>
-          <target>Bloqueado por report 5100</target>
+        <trans-unit id="Report 2475580156 - NamedType 3192136812" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Item Modified</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Producto Modificado"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Block Non Satisfactory Items - NamedType ItemModifiedCaptionLbl</note>
+          <target>Producto Modificado</target>
         </trans-unit>
         <trans-unit id="Report 2475580156 - RequestPage 2516438534 - Property 1064389655" size-unit="char" translate="yes" xml:space="preserve">
           <source>Teaching tip title</source>
@@ -351,106 +435,220 @@
           <note from="Xliff Generator" annotates="general" priority="3">Report Block Non Satisfactory Items - Control NoOfNonSatisfactoryUnitsLabel - Property Caption</note>
           <target>Nº de Unidades No Satisfactorias</target>
         </trans-unit>
+        <trans-unit id="PageExtension 2970670087 - Action 1407905489 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
+          <source>Open the quality control measures for this item.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 50100Item Card - Action QCMeasuresAction - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 2970670087 - Action 1407905489 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
+          <source>Quality Control Measures</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Medidas control calidad"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 50100Item Card - Action QCMeasuresAction - Property Caption</note>
+          <target>Medidas control calidad</target>
+        </trans-unit>
+        <trans-unit id="PageExtension 2970670087 - Control 1483341903 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
+          <source>Quality</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Calidad",FRA="Calidad en frances"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 50100Item Card - Control Quality - Property Caption</note>
+          <target>Calidad</target>
+        </trans-unit>
+        <trans-unit id="PageExtension 2970670087 - Control 1003069835 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
+          <source>sbjhas</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Especifica si el producto tiene que pasar por un proceso de control de calidad en la recepción de compras"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 50100Item Card - Control Requieres Quality Control - Property ToolTip</note>
+          <target>Especifica si el producto tiene que pasar por un proceso de control de calidad en la recepción de compras</target>
+        </trans-unit>
+        <trans-unit id="PageExtension 486596870 - Control 3382814931 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 526152577">
+          <source>Specifies the quality control result (enum field).</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 50101Purchase Order Subform - Control QC Result (Enum) - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 486596870 - Control 4046106435 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 526152577">
+          <source>Specifies the quality control result (option field).</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 50101Purchase Order Subform - Control QC Result (Option) - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 108737967 - Control 3826167628 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3595318222">
+          <source>Specifies expression 1.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 50103Item Ledger Entries - Control Expresion1 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 108737967 - Control 168896949 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3595318222">
+          <source>Specifies expression 2.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 50103Item Ledger Entries - Control Expresion2 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 108737967 - Control 806593566 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3595318222">
+          <source>Specifies expression 3.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 50103Item Ledger Entries - Control Expresion3 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 108737967 - Control 637684543 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3595318222">
+          <source>Specifies expression 4.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 50103Item Ledger Entries - Control Expresion4 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 108737967 - Control 1275381160 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3595318222">
+          <source>Specifies expression 5.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 50103Item Ledger Entries - Control Expresion5 - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 108737967 - Control 3382814931 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3595318222">
+          <source>Specifies the quality control result (enum field).</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 50103Item Ledger Entries - Control QC Result (Enum) - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 108737967 - Control 4046106435 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3595318222">
+          <source>Specifies the quality control result (option field).</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 50103Item Ledger Entries - Control QC Result (Option) - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="PageExtension 108737967 - Control 1343707150 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3595318222">
+          <source>Specifies the name of the source (vendor).</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 50103Item Ledger Entries - Control Source Name - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="PageExtension 108737967 - View 2923686772 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 3595318222">
           <source>Satisfactory</source>
           <note from="Developer" annotates="general" priority="2">ESP="Satisfactorio"</note>
           <note from="Xliff Generator" annotates="general" priority="3">PageExtension 50103Item Ledger Entries - View Satisfactory - Property Caption</note>
           <target>Satisfactorio</target>
         </trans-unit>
-        <trans-unit id="PageExtension 742805820 - Action 1407905489 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
-          <source>Quality Control Measures</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Medidas control calidad"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Item Card Extension - Action QCMeasuresAction - Property Caption</note>
-          <target>Medidas control calidad</target>
+        <trans-unit id="PageExtension 3911572218 - Control 631281581 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 4178721393">
+          <source>Specifies the quantity of non-satisfactory purchases for the item.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 50105Item List - Control Non-satisfactory Purch. (Qty.) - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 742805820 - Control 1483341903 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
-          <source>Quality</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Calidad",FRA="Calidad en frances"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Item Card Extension - Control Quality - Property Caption</note>
-          <target>Calidad</target>
+        <trans-unit id="PageExtension 2524682110 - Control 2199286534 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
+          <source>Specifies the customer level.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 50106Customer Card - Control Customer Level - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="PageExtension 742805820 - Control 1003069835 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 1434786627">
-          <source>sbjhas</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Especifica si el producto tiene que pasar por un proceso de control de calidad en la recepción de compras"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Item Card Extension - Control Requieres Quality Control - Property ToolTip</note>
-          <target>Especifica si el producto tiene que pasar por un proceso de control de calidad en la recepción de compras</target>
+        <trans-unit id="PageExtension 2524682110 - Control 2875961301 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 523354100">
+          <source>Specifies the discount associated with the customer level.</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension 50106Customer Card - Control Level Discount - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="TableExtension 4089294192 - Field 3382814931 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4089294192">
-          <source>QC Result (Enum)</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Resultado CC (Enum)"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Item Ledger Entry - Field QC Result (Enum) - Property Caption</note>
-          <target>Resultado CC (Enum)</target>
+        <trans-unit id="PageExtension 2406989597 - Control 3382814931 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2406989597">
+          <source>Specifies the quality control result (enum field).</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Posted Purchase Rcpt. Subform - Control QC Result (Enum) - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="TableExtension 4089294192 - Field 4046106435 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4089294192">
-          <source>QC Result (Option)</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Resultado CC (Option)"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Item Ledger Entry - Field QC Result (Option) - Property Caption</note>
-          <target>Resultado CC (Option)</target>
+        <trans-unit id="PageExtension 2406989597 - Control 4046106435 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2406989597">
+          <source>Specifies the quality control result (option field).</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageExtension Posted Purchase Rcpt. Subform - Control QC Result (Option) - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="TableExtension 4089294192 - Field 4046106435 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4089294192">
-          <source> ,Satisfactory,Non Satisfactory</source>
-          <note from="Developer" annotates="general" priority="2">ESP=" ,Satisfactorio,No Satisfactorio"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Item Ledger Entry - Field QC Result (Option) - Property OptionCaption</note>
-          <target> ,Satisfactorio,No Satisfactorio</target>
-        </trans-unit>
-        <trans-unit id="TableExtension 4089294192 - Field 1343707150 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4089294192">
-          <source>Source Name</source>
-          <note from="Developer" annotates="general" priority="2">ESP="Nombre procedencia mov."</note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Item Ledger Entry - Field Source Name - Property Caption</note>
-          <target>Nombre procedencia mov.</target>
-        </trans-unit>
-        <trans-unit id="TableExtension 3531986640 - Field 631281581 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
+        <trans-unit id="TableExtension 770316819 - Field 631281581 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Non-satisfactory Purch. (Qty.)</source>
           <note from="Developer" annotates="general" priority="2">ESP="Compras No Satisfactorias (Cdad.)"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension ItemExtension - Field Non-satisfactory Purch. (Qty.) - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 50100Item - Field Non-satisfactory Purch. (Qty.) - Property Caption</note>
           <target>Compras No Satisfactorias (Cdad.)</target>
         </trans-unit>
-        <trans-unit id="TableExtension 3531986640 - Field 1003069835 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
+        <trans-unit id="TableExtension 770316819 - Field 1003069835 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Requieres Quality Control</source>
           <note from="Developer" annotates="general" priority="2">ESP="Requiere control calidad"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension ItemExtension - Field Requieres Quality Control - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 50100Item - Field Requieres Quality Control - Property Caption</note>
           <target>Requiere control calidad</target>
         </trans-unit>
-        <trans-unit id="TableExtension 3531986640 - Field 4092688667 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
+        <trans-unit id="TableExtension 770316819 - Field 4092688667 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 3276313895">
           <source>Un FlowFilter</source>
           <note from="Developer" annotates="general" priority="2"/>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension ItemExtension - Field Un FlowFilter - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 50100Item - Field Un FlowFilter - Property Caption</note>
         </trans-unit>
-        <trans-unit id="TableExtension 959319265 - Field 3382814931 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 959319265">
+        <trans-unit id="TableExtension 3064170316 - Field 3382814931 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1519909599">
           <source>QC Result (Enum)</source>
           <note from="Developer" annotates="general" priority="2">ESP="Resultado CC (Enum)"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Purch. Rcpt. Line - Field QC Result (Enum) - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 50101Purchase Line - Field QC Result (Enum) - Property Caption</note>
           <target>Resultado CC (Enum)</target>
         </trans-unit>
-        <trans-unit id="TableExtension 959319265 - Field 4046106435 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 959319265">
+        <trans-unit id="TableExtension 3064170316 - Field 4046106435 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1519909599">
           <source>QC Result (Option)</source>
           <note from="Developer" annotates="general" priority="2">ESP="Resultado CC (Option)"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Purch. Rcpt. Line - Field QC Result (Option) - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 50101Purchase Line - Field QC Result (Option) - Property Caption</note>
           <target>Resultado CC (Option)</target>
         </trans-unit>
-        <trans-unit id="TableExtension 959319265 - Field 4046106435 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 959319265">
+        <trans-unit id="TableExtension 3064170316 - Field 4046106435 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1519909599">
           <source> ,Satisfactory,Non Satisfactory</source>
           <note from="Developer" annotates="general" priority="2">ESP=" ,Satisfactorio,No Satisfactorio"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Purch. Rcpt. Line - Field QC Result (Option) - Property OptionCaption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 50101Purchase Line - Field QC Result (Option) - Property OptionCaption</note>
           <target> ,Satisfactorio,No Satisfactorio</target>
         </trans-unit>
-        <trans-unit id="TableExtension 1519909599 - Field 3382814931 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1519909599">
+        <trans-unit id="TableExtension 1619664235 - Field 3382814931 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 959319265">
           <source>QC Result (Enum)</source>
           <note from="Developer" annotates="general" priority="2">ESP="Resultado CC (Enum)"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Purchase Line - Field QC Result (Enum) - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 50102Purch. Rcpt. Line - Field QC Result (Enum) - Property Caption</note>
           <target>Resultado CC (Enum)</target>
         </trans-unit>
-        <trans-unit id="TableExtension 1519909599 - Field 4046106435 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1519909599">
+        <trans-unit id="TableExtension 1619664235 - Field 4046106435 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 959319265">
           <source>QC Result (Option)</source>
           <note from="Developer" annotates="general" priority="2">ESP="Resultado CC (Option)"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Purchase Line - Field QC Result (Option) - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 50102Purch. Rcpt. Line - Field QC Result (Option) - Property Caption</note>
           <target>Resultado CC (Option)</target>
         </trans-unit>
-        <trans-unit id="TableExtension 1519909599 - Field 4046106435 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 1519909599">
+        <trans-unit id="TableExtension 1619664235 - Field 4046106435 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 959319265">
           <source> ,Satisfactory,Non Satisfactory</source>
           <note from="Developer" annotates="general" priority="2">ESP=" ,Satisfactorio,No Satisfactorio"</note>
-          <note from="Xliff Generator" annotates="general" priority="3">TableExtension Purchase Line - Field QC Result (Option) - Property OptionCaption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 50102Purch. Rcpt. Line - Field QC Result (Option) - Property OptionCaption</note>
           <target> ,Satisfactorio,No Satisfactorio</target>
+        </trans-unit>
+        <trans-unit id="TableExtension 3184136989 - Field 3382814931 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4089294192">
+          <source>QC Result (Enum)</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Resultado CC (Enum)"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 50103Item Ledger Entry - Field QC Result (Enum) - Property Caption</note>
+          <target>Resultado CC (Enum)</target>
+        </trans-unit>
+        <trans-unit id="TableExtension 3184136989 - Field 4046106435 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4089294192">
+          <source>QC Result (Option)</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Resultado CC (Option)"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 50103Item Ledger Entry - Field QC Result (Option) - Property Caption</note>
+          <target>Resultado CC (Option)</target>
+        </trans-unit>
+        <trans-unit id="TableExtension 3184136989 - Field 4046106435 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4089294192">
+          <source> ,Satisfactory,Non Satisfactory</source>
+          <note from="Developer" annotates="general" priority="2">ESP=" ,Satisfactorio,No Satisfactorio"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 50103Item Ledger Entry - Field QC Result (Option) - Property OptionCaption</note>
+          <target> ,Satisfactorio,No Satisfactorio</target>
+        </trans-unit>
+        <trans-unit id="TableExtension 3184136989 - Field 1343707150 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 4089294192">
+          <source>Source Name</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Nombre procedencia mov."</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 50103Item Ledger Entry - Field Source Name - Property Caption</note>
+          <target>Nombre procedencia mov.</target>
+        </trans-unit>
+        <trans-unit id="TableExtension 1188926910 - Field 3382814931 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 346005766">
+          <source>QC Result (Enum)</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Resultado CC (Enum)"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 50104Item Journal Line - Field QC Result (Enum) - Property Caption</note>
+          <target>Resultado CC (Enum)</target>
+        </trans-unit>
+        <trans-unit id="TableExtension 1188926910 - Field 4046106435 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 346005766">
+          <source>QC Result (Option)</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Resultado CC (Option)"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 50104Item Journal Line - Field QC Result (Option) - Property Caption</note>
+          <target>Resultado CC (Option)</target>
+        </trans-unit>
+        <trans-unit id="TableExtension 1188926910 - Field 4046106435 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 346005766">
+          <source> ,Satisfactory,Non Satisfactory</source>
+          <note from="Developer" annotates="general" priority="2">ESP=" ,Satisfactorio,No Satisfactorio"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension 50104Item Journal Line - Field QC Result (Option) - Property OptionCaption</note>
+          <target> ,Satisfactorio,No Satisfactorio</target>
+        </trans-unit>
+        <trans-unit id="Profile 880892238 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Quality Control</source>
+          <note from="Developer" annotates="general" priority="2">ESP="Control calidad"</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Profile Quality Control - Property Caption</note>
+          <target>Control calidad</target>
+        </trans-unit>
+        <trans-unit id="Profile 880892238 - Property 4111922599" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Profile Description</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">Profile Quality Control - Property ProfileDescription</note>
+        </trans-unit>
+        <trans-unit id="PageCustomization 2958880484 - AnalysisView 3013128780 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Page 2393537757">
+          <source>Una Vista de Análisis</source>
+          <note from="Developer" annotates="general" priority="2"/>
+          <note from="Xliff Generator" annotates="general" priority="3">PageCustomization 50107Customer Ledger Entries - AnalysisView UnaVistaDeAnalisis - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 1586726685 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source> </source>
