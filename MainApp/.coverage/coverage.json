@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "coverageData": [],
+  "testStatus": {
+    "50152|ErrorWhenPostingReceiptWithoutQCResult": 0,
+    "50152|QCResultIsSavedInTheReceipt": 0,
+    "50152|SelectingItemOnAnOrderFillsQCMeasures": 0,
+    "50152|NothingWhenSatisfactory": 0,
+    "50152|NegativeAdjustmentWhenNonSatisfactory": 0,
+    "50150|Test001": 0,
+    "50150|Test002": 1,
+    "50150|GetMin001": 0,
+    "50150|GetMin002": 0,
+    "50150|GetMin003": 0,
+    "50150|GetMin004": 0
+  }
+}
