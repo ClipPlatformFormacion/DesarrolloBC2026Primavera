@@ -7,9 +7,14 @@ codeunit 50151 GetMin
     begin
         Datos.Add(P1);
         Datos.Add(P2);
-        Resultado := GetMin(Datos);
+        Resultado := this.GetMin(Datos);
     end;
 
+    /// <summary>
+    /// Obtiene el valor mínimo de una lista de enteros.
+    /// </summary>
+    /// <param name="Data">Lista de enteros</param>
+    /// <returns>Valor mínimo</returns>
     procedure GetMin(Data: List of [Integer]) Resultado: Decimal
     var
         Valor: Integer;
